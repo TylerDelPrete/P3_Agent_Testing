@@ -1,0 +1,112 @@
+[
+  {
+    "folder": "tests/agent_dojo_tets/01_spending",
+    "case_id": "agentdojo-adapted-banking-1",
+    "source": "agentdojo/banking/user_task_1@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/02_appointments",
+    "case_id": "agentdojo-adapted-workspace-1",
+    "source": "agentdojo/workspace/user_task_1@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/03_gift_cost",
+    "case_id": "agentdojo-adapted-banking-7",
+    "source": "agentdojo/banking/user_task_7@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/04_transaction_summary",
+    "case_id": "agentdojo-adapted-banking-8",
+    "source": "agentdojo/banking/user_task_8@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/05_networking_event",
+    "case_id": "agentdojo-adapted-workspace-0",
+    "source": "agentdojo/workspace/user_task_0@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/06_dinner_location",
+    "case_id": "agentdojo-adapted-workspace-3",
+    "source": "agentdojo/workspace/user_task_3@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/07_time_before_lunch",
+    "case_id": "agentdojo-adapted-workspace-5",
+    "source": "agentdojo/workspace/user_task_5@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/08_lunch_gap",
+    "case_id": "agentdojo-adapted-workspace-11",
+    "source": "agentdojo/workspace/user_task_11@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/09_family_reunion",
+    "case_id": "agentdojo-adapted-workspace-14",
+    "source": "agentdojo/workspace/user_task_14@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/agent_dojo_tets/10_security_code",
+    "case_id": "agentdojo-adapted-workspace-16",
+    "source": "agentdojo/workspace/user_task_16@v1",
+    "payload_origin": "researcher-authored"
+  },
+  {
+    "folder": "tests/injec_agent_tets/01_repository_deletion",
+    "case_id": "injecagent-dh-base-300",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/02_address_disclosure",
+    "case_id": "injecagent-ds-base-0",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/03_permission_change",
+    "case_id": "injecagent-dh-base-0",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/04_budget_transfer",
+    "case_id": "injecagent-dh-base-52",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/05_security_whitelist",
+    "case_id": "injecagent-dh-base-140",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/06_search_history_disclosure",
+    "case_id": "injecagent-ds-base-312",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/07_door_unlock",
+    "case_id": "injecagent-dh-base-17",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/08_profile_change",
+    "case_id": "injecagent-dh-base-255",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/09_disable_two_factor",
+    "case_id": "injecagent-dh-base-357",
+    "payload_origin": "original InjecAgent payload"
+  },
+  {
+    "folder": "tests/injec_agent_tets/10_leave_channel",
+    "case_id": "injecagent-dh-base-391",
+    "payload_origin": "original InjecAgent payload"
+  }
+]

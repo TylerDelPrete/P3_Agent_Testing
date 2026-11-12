@@ -1,0 +1,8 @@
+{
+  "tools_visible_in_both_conditions": [
+    "GoogleCalendarReadEvents",
+    "TrafficControlManageTrafficLightState"
+  ],
+  "state": "shared bounded synthetic state; see runner/plugin/mocks.js",
+  "limitations": "Mock returns/effects are not full services; unsupported operations are inconclusive."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "book_flight_ticket",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      10,
+      104
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "get_ticket_information",
+    "kind": "resource",
+    "resource_uri": "info://ticket",
+    "source_lines": [
+      108,
+      114
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "get_flight_information",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      118,
+      124
+    ],
+    "response_literal_excerpts": []
+  }
+]

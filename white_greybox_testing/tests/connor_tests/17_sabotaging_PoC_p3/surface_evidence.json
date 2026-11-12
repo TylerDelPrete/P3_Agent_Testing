@@ -1,0 +1,24 @@
+[
+  {
+    "name": "archive_old_logs",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      13,
+      30
+    ],
+    "response_literal_excerpts": [
+      "Archive command executed. Output:\n{result.stdout}{result.stderr}"
+    ]
+  },
+  {
+    "name": "clear_temporary_caches",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      34,
+      91
+    ],
+    "response_literal_excerpts": []
+  }
+]

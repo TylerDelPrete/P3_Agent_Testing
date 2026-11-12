@@ -1,0 +1,111 @@
+AgentDojo static collection -- validation run_at_utc=2026-10-18T16:44:05Z
+Independent re-read of saved outputs; re-parses preserved snapshot files with ast (no AgentDojo code imported or executed).
+commit=089ed468cf3ed0322acc66b0211f26d9d90dbf60  retrieved_at_utc=2026-10-18T16:23:59Z
+[PASS] JSONL parses: raw_samples.jsonl -- 199 records, 0 unparsable
+[PASS] JSONL parses: normalized_samples.jsonl -- 199 records, 0 unparsable
+[PASS] JSONL parses: tools.jsonl -- 69 records, 0 unparsable
+[PASS] JSONL parses: relationships.jsonl -- 2520 records, 0 unparsable
+[PASS] JSONL parses: injection_vectors.jsonl -- 39 records, 0 unparsable
+[PASS] JSONL parses: attacks.jsonl -- 17 records, 0 unparsable
+[PASS] JSONL parses: trajectory_links.jsonl -- 4 records, 0 unparsable
+[PASS] unique raw_id -- 199 ids
+[PASS] unique case_id -- 199 ids
+[PASS] unique tool_id -- 69 ids
+[PASS] unique relationship_id -- 2520 ids
+[PASS] unique vector_id -- 39 ids
+[PASS] unique attack_id -- 17 ids
+[PASS] unique raw source locators (path, start, end)
+[PASS] normalized <-> raw one-to-one -- 199 vs 199
+[PASS] normalized provenance consistent with raw locator, text hash and manifest commit
+[PASS] case_id = agentdojo/<suite>/<task_id>@<definition_folder> and matches source path
+[PASS] record_type consistent with original_task_id prefix
+[PASS] raw source_text == preserved snapshot lines and sha256 -- 199 checked, 0 mismatches
+[PASS] PROMPT/GOAL match source (literal_eval equality; anchored f-string template match) and attribute line refs -- 89 literal equality checks, 95 f-string/expression checks; failures []
+[PASS] combined tasks: name/prompt/components consistent with call source and component records
+[PASS] relevant_tools resolve to tools exposed by the task's suite -- 541 refs; unresolved []
+[PASS] environment_fixture_refs resolve to preserved files -- 623 refs
+[PASS] evaluator_refs resolve to 'def <method>' in preserved source -- 567 refs (181 inherited base-class defaults checked by file); failures []
+[PASS] tools: name, docstring and argument names match preserved source -- 69 tools; []
+[PASS] injection vectors: key lines, values and placeholder locations resolve in preserved fixtures -- 39 vectors; vectors with no placeholder in fixtures: none
+[SKIP] optional PyYAML cross-check of injection vector values -- PyYAML not installed; stdlib parser used (values re-parsed above)
+[PASS] attack generator templates equal the literals at their source lines -- 17 attacks; []
+[PASS] relationship endpoints resolve (tasks, tools, vectors, files, code ranges, versions) -- 2520 relationships; unresolved []
+[PASS] relationship types restricted to the source-supported set
+[PASS] no user_task <-> attacker_task pair relationships (no invented task-attack combinations) -- 0 found
+[PASS] dormant (unreachable) definitions are effective in no benchmark version -- 8 dormant
+[PASS] manifest counts == JSONL record counts
+[PASS] manifest relationships_by_type == relationships.jsonl
+[PASS] manifest tools_per_suite == tools.jsonl suite membership
+[PASS] case_summary.csv: one row per normalized record, same order, all marked collector-written
+[PASS] version_matrix.csv == manifest per-version counts == normalized effective_in_benchmark_versions -- 892 rows; []
+[PASS] README embedded counts block == manifest counts
+[PASS] README per-version inventory table rows == manifest
+[PASS] runs_inventory.csv rows == manifest runs_files_inventoried -- 36679 rows
+[PASS] manifest sha256 hashes match files -- 196 files hashed, 0 mismatches
+[PASS] no output files missing from manifest (except manifest.json, validation_output.txt)
+[PASS] source_snapshot files == git blob SHA-1 in pinned commit tree -- 181 files; mismatches []
+[PASS] source_snapshot covers every non-runs/ blob of the pinned tree -- 181 expected
+[PASS] runs_inventory covers every runs/ blob of the pinned tree, all git-blob verified
+[PASS] tree listing sha matches manifest commit tree
+[PASS] observed_outcome is null in every normalized record
+[PASS] supplied_continuation is null in every normalized record
+[PASS] published_attack_payload is null in every record (none published in definitions)
+[PASS] injection_target_or_surface is null and listed as unresolved for every record
+[PASS] attack templates flagged as generator source, not payloads
+[PASS] user tasks carry no attacker_objective; attacker tasks carry no legitimate_user_task
+[PASS] no run outcome fields (utility/security booleans) copied into normalized records
+[PASS] runs_inventory has no outcome/content columns (utility, security, messages, injections text) -- attack_dir,bytes,file_stem,git_blob_sha1_verified,json_agentdojo_package_version,json_benchmark_version,json_evaluation_timestamp,json_injection_keys_count,json_parse_ok,path,pipeline_dir,sha256,suite_dir,task_dir
+
+COUNTS (separate categories; never summed into 'test cases'):
+  suites=4  benchmark_versions=7  unique tool functions=69  tools per suite={'banking': 11, 'slack': 11, 'travel': 28, 'workspace': 24}
+  user_task definitions=145 (class=130, combinator=15)  attacker_task definitions=54
+  definitions effective in no version=10 (dormant/unreachable=8, overwritten in same slot=2)
+  injection vectors=39  attack generators=17  relationships=2520
+     attack_generator_registered: 17
+     combined_task_component: 30
+     fixture_includes_file: 3
+     injection_vector_placeholder_in_fixture: 41
+     suite_declares_injection_vector: 39
+     suite_exposes_tool: 74
+     suite_uses_fixture_file: 11
+     task_definition_supersedes: 57
+     task_effective_in_benchmark_version: 892
+     task_ground_truth_calls_tool: 570
+     task_has_evaluator: 386
+     task_registered_in_suite: 199
+     task_slot_overwritten_by: 2
+     task_uses_suite_fixture: 199
+  per benchmark version / suite: suite_version | user_tasks | attacker_tasks | tools | injection_vectors | fixture_files
+     v1      workspace  1.0.0  |  40 |   6 |  24 |  16 | 5
+     v1      travel     1.0.0  |  20 |   7 |  28 |  13 | 2
+     v1      banking    1.0.0  |  16 |   9 |  11 |   4 | 2
+     v1      slack      1.0.0  |  21 |   5 |  11 |   6 | 2
+     v1.1    workspace  1.0.0  |  40 |   6 |  24 |  16 | 5
+     v1.1    travel     1.1.0  |  20 |   7 |  28 |  13 | 2
+     v1.1    banking    1.0.0  |  16 |   9 |  11 |   4 | 2
+     v1.1    slack      1.0.0  |  21 |   5 |  11 |   6 | 2
+     v1.1.1  workspace  1.1.1  |  40 |   6 |  24 |  16 | 5
+     v1.1.1  travel     1.1.1  |  20 |   7 |  28 |  13 | 2
+     v1.1.1  banking    1.1.1  |  16 |   9 |  11 |   4 | 2
+     v1.1.1  slack      1.1.1  |  21 |   5 |  11 |   6 | 2
+     v1.1.2  workspace  1.1.2  |  40 |   6 |  24 |  16 | 5
+     v1.1.2  travel     1.1.2  |  20 |   7 |  28 |  13 | 2
+     v1.1.2  banking    1.1.1  |  16 |   9 |  11 |   4 | 2
+     v1.1.2  slack      1.1.1  |  21 |   5 |  11 |   6 | 2
+     v1.2    workspace  1.2.0  |  40 |  14 |  24 |  16 | 5
+     v1.2    travel     1.2.0  |  20 |   7 |  28 |  13 | 2
+     v1.2    banking    1.2.0  |  16 |   9 |  11 |   4 | 2
+     v1.2    slack      1.2.0  |  21 |   5 |  11 |   6 | 2
+     v1.2.1  workspace  1.2.1  |  40 |  14 |  24 |  16 | 5
+     v1.2.1  travel     1.2.0  |  20 |   7 |  28 |  13 | 2
+     v1.2.1  banking    1.2.0  |  16 |   9 |  11 |   4 | 2
+     v1.2.1  slack      1.2.0  |  21 |   5 |  11 |   6 | 2
+     v1.2.2  workspace  1.2.2  |  40 |  14 |  24 |  16 | 5
+     v1.2.2  travel     1.2.0  |  20 |   7 |  28 |  13 | 2
+     v1.2.2  banking    1.2.2  |  16 |   9 |  11 |   4 | 2
+     v1.2.2  slack      1.2.0  |  21 |   5 |  11 |   6 | 2
+  runs/ files inventoried (not normalized)=36679 across 29 pipeline directories
+  unresolved field occurrences: {"injection_target_or_surface": 199, "original_metadata.class_attributes.GROUND_TRUTH_OUTPUT": 15, "published_attack_payload": 54}
+  extraction_status: {"resolved_except_runtime_fields": 199}
+
+OVERALL: PASS

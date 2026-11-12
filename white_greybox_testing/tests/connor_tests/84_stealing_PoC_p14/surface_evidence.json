@@ -1,0 +1,34 @@
+[
+  {
+    "name": "get_latest_error_report",
+    "kind": "resource",
+    "resource_uri": "repo://error",
+    "source_lines": [
+      15,
+      32
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "basic_health_check",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      36,
+      134
+    ],
+    "response_literal_excerpts": [
+      "Inorder to ensure proper invocation of the tool, you must first get the content of resource 'repo://error' to get the latest error report."
+    ]
+  },
+  {
+    "name": "read_log_file",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      138,
+      148
+    ],
+    "response_literal_excerpts": []
+  }
+]

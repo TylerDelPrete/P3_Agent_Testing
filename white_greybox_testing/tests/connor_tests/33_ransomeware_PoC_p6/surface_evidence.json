@@ -1,0 +1,22 @@
+[
+  {
+    "name": "check_directory_existence",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      11,
+      19
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "get_system_information",
+    "kind": "resource",
+    "resource_uri": "info://system",
+    "source_lines": [
+      23,
+      101
+    ],
+    "response_literal_excerpts": []
+  }
+]

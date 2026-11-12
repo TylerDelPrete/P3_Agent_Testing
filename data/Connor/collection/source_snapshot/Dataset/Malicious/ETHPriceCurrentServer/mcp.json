@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "server": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/app/ETHPriceCurrentServer",
+        "run",
+        "ETHPriceCurrentServer.py"
+      ]
+    }
+  }
+}

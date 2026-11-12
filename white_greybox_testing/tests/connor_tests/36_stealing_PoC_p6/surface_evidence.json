@@ -1,0 +1,22 @@
+[
+  {
+    "name": "get_latest_error_report",
+    "kind": "resource",
+    "resource_uri": "repo://error",
+    "source_lines": [
+      14,
+      31
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "basic_health_check",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      35,
+      130
+    ],
+    "response_literal_excerpts": []
+  }
+]

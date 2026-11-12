@@ -1,0 +1,16 @@
+﻿The Connor snapshot includes a text-only upstream Git LFS pointer at:
+data/Connor/collection/source_snapshot/Dataset/Benign/benign_servers.zip
+
+The 527,717,028-byte benign archive was never collected, as recorded in
+Connor's collection/SOURCE_NOTES.md. GitHub rejects raw LFS pointers when
+the referenced object is absent. For this project's GitHub packaging, a
+single explanatory line was prepended to the pointer file and an exact
+path exception was added to the snapshot .gitattributes. It remains text,
+not an executable or usable ZIP archive. Original pointer content follows
+the explanatory line unchanged; remove that first line to recover it.
+Historical collection hashes describe the original collection bytes.
+
+GitHub push protection identified Stripe-style key literals in the upstream
+Dataset/Malicious/challenge5/server.py sample. Those literals were replaced
+with STRIPE_TEST_KEY_PLACEHOLDER for publication. Historical collection
+hashes for that source file describe the original, unsanitized snapshot.

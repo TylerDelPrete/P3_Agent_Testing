@@ -1,0 +1,144 @@
+{
+  "case_id": "connor-dataset-malicious-weather_attack1",
+  "dataset": "Connor",
+  "schema_version": "connor-malicious-mcp-normalized/1.0",
+  "original_component_id_or_name": "weather_attack1",
+  "component_origin": "prior PoC",
+  "component_upstream_attribution": {
+    "attributed_source": null,
+    "candidate_sources": [
+      "AIS2Lab/MCPSecBench",
+      "MCP-Security/MCP-Artifact",
+      "harishsg993010/damn-vulnerable-MCP-server",
+      "security-pride/MCP_Landscape"
+    ],
+    "confidence": "low",
+    "evidence": "indirect-prompt-injection-via-external-resource PoC; upstream not identifiable from repo alone; candidate: MCP-Security/MCP-Artifact or security-pride/MCP_Landscape"
+  },
+  "component_file_refs": [
+    "Dataset/Malicious/weather_attack1/mcp.json",
+    "Dataset/Malicious/weather_attack1/pyproject.toml",
+    "Dataset/Malicious/weather_attack1/server.py",
+    "Dataset/Malicious/weather_attack1/uv.lock"
+  ],
+  "declared_description": {
+    "fastmcp_display_names": [
+      "WeatherCurrentServer"
+    ],
+    "primary_source_file": "Dataset/Malicious/weather_attack1/server.py",
+    "note": "FastMCP display name(s) and tool docstrings (recorded verbatim under declared_tools_and_capabilities)."
+  },
+  "declared_tools_and_capabilities": [
+    {
+      "name": "get_current_weather_tool",
+      "kind": "tool",
+      "server": "WeatherCurrentServer",
+      "resource_uri": null,
+      "parameters": [
+        {
+          "name": "location",
+          "annotation": "str",
+          "default": null
+        },
+        {
+          "name": "detail",
+          "annotation": "Optional[str]",
+          "default": "None"
+        }
+      ],
+      "returns": "list[str]",
+      "docstring": "\n    get weather of a location\n\n    "
+    }
+  ],
+  "documented_setup_or_trigger": {
+    "mcp_json": [
+      {
+        "server_key": "server",
+        "command": "uv",
+        "args": [
+          "--directory",
+          "/app/weather_attack1",
+          "run",
+          "server.py"
+        ]
+      }
+    ],
+    "mcp_json_raw": "{\n  \"mcpServers\": {\n    \"server\": {\n      \"command\": \"uv\",\n      \"args\": [\n        \"--directory\",\n        \"/app/weather_attack1\",\n        \"run\",\n        \"server.py\"\n      ]\n    }\n  }\n}\n",
+    "config_command_contains_shell_payload": false
+  },
+  "documented_attacker_objective": {
+    "attack_goal": null,
+    "source": "not explicitly labelled in released fixture; see fastmcp_display_names / interpretation"
+  },
+  "original_behavior_or_attack_labels": {
+    "directory": "weather_attack1",
+    "fastmcp_display_names": [
+      "WeatherCurrentServer"
+    ]
+  },
+  "influence_path": null,
+  "expected_behavior": {
+    "declared_cover_functionality": "WeatherCurrentServer",
+    "basis": "collector summary of the server's self-declared functionality (FastMCP name / tool summary line); extracted from source, not an authorized task spec or clean control"
+  },
+  "author_reported_result": null,
+  "observed_outcome": null,
+  "runtime_evidence_refs": [],
+  "dependencies_and_environment_requirements": {
+    "python_dependencies": [
+      "lxml>=6.0.2",
+      "mcp[cli]>=1.26.0",
+      "pydantic>=2.12.5",
+      "requests>=2.32.5"
+    ],
+    "requires_python": ">=3.13",
+    "runtime_from_mcp_json": [
+      {
+        "server_key": "server",
+        "command": "uv",
+        "args": [
+          "--directory",
+          "/app/weather_attack1",
+          "run",
+          "server.py"
+        ]
+      }
+    ],
+    "host_requirements": "Connor detector requires Docker to run servers (repo README); fixtures are stdio FastMCP servers",
+    "external_resource_dependencies": [],
+    "referenced_external_endpoints_DO_NOT_CONTACT": [
+      "https://sites.google.com/view/api-weather-location/"
+    ]
+  },
+  "license_refs": [
+    "Dataset/LICENSE.md",
+    "THIRD_PARTY_NOTICES.md",
+    "upstream third-party license applies (not Apache-2.0)"
+  ],
+  "provenance": {
+    "repository_url": "https://github.com/yiheng98/Connor",
+    "commit_hash": "326ab9116699442d2744b445b38c69524fbf43e6",
+    "source_paths": [
+      "Dataset/Malicious/weather_attack1/mcp.json",
+      "Dataset/Malicious/weather_attack1/pyproject.toml",
+      "Dataset/Malicious/weather_attack1/server.py",
+      "Dataset/Malicious/weather_attack1/uv.lock"
+    ],
+    "original_component_dir": "Dataset/Malicious/weather_attack1",
+    "original_identifiers": {
+      "name": "weather_attack1",
+      "category_or_source": "Dataset/Malicious"
+    },
+    "retrieval_time": "2026-10-18T10:33:19.151625-06:00",
+    "retrieval_time_zone": "America/Denver"
+  },
+  "extraction_status": "partial",
+  "unresolved_fields": [
+    "exact_upstream_source_unresolved",
+    "documented_attacker_objective_not_explicitly_labeled_in_source"
+  ],
+  "interpretation": [
+    "Collector reads this as a prior/third-party PoC bundled into Connor's evaluation Dataset/Malicious; it is NOT a Connor-constructed fixture. Upstream attribution per THIRD_PARTY_NOTICES.md + in-file evidence.",
+    "observed_outcome is null: no component was executed. Any attack objective / malicious code pattern is a declared/author-reported property, not a measured experimental result."
+  ]
+}

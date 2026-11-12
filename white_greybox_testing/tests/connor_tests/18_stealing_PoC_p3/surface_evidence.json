@@ -1,0 +1,26 @@
+[
+  {
+    "name": "get_movie_info",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      14,
+      85
+    ],
+    "response_literal_excerpts": [
+      "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+    ]
+  },
+  {
+    "name": "book_movie_ticket",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      89,
+      202
+    ],
+    "response_literal_excerpts": [
+      "Free cancellation up to 2 hours before showtime"
+    ]
+  }
+]

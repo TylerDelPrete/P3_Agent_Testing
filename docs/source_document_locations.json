@@ -1,0 +1,65 @@
+{
+  "note": "Documentation filenames renamed for one project README. Contents are unchanged. Original collection manifests retain upstream filenames; use this mapping to locate those documents or restore original names for collection reproduction.",
+  "files": [
+    {
+      "original_path": "data/AgentDojo/collection/README.md",
+      "current_path": "data/AgentDojo/collection/SOURCE_NOTES.md",
+      "sha256": "80f05b07f789f7113c67647855c4581a7be309f185f3db22ed8c806f1d1a3ac2"
+    },
+    {
+      "original_path": "data/AgentDojo/collection/source_snapshot/examples/README.md",
+      "current_path": "data/AgentDojo/collection/source_snapshot/examples/SOURCE_NOTES.md",
+      "sha256": "f2a59639b8955f92b03735b7b4f2e8902ed18388fde15c939060f503b2843a83"
+    },
+    {
+      "original_path": "data/AgentDojo/collection/source_snapshot/README.md",
+      "current_path": "data/AgentDojo/collection/source_snapshot/SOURCE_NOTES.md",
+      "sha256": "d8c6460ecce9bbf59ed300fbc74b4440188f74cd147a7611836270be49e7660e"
+    },
+    {
+      "original_path": "data/AgentDojo/README.md",
+      "current_path": "data/AgentDojo/SOURCE_NOTES.md",
+      "sha256": "00f43929f1887ad37f7caca9f5474b75d210dceaef9a25f0b58c138a5b67f341"
+    },
+    {
+      "original_path": "data/Connor/collection/README.md",
+      "current_path": "data/Connor/collection/SOURCE_NOTES.md",
+      "sha256": "87946373977da06100272496cc46be0a2d6b5901476cd8c43fa88167f26606b8"
+    },
+    {
+      "original_path": "data/Connor/collection/source_snapshot/PoCs/README.md",
+      "current_path": "data/Connor/collection/source_snapshot/PoCs/SOURCE_NOTES.md",
+      "sha256": "d76773d32e2ecd398f967cc0eee282a25a01a80391113b7134903960f463faf8"
+    },
+    {
+      "original_path": "data/Connor/collection/source_snapshot/README.md",
+      "current_path": "data/Connor/collection/source_snapshot/SOURCE_NOTES.md",
+      "sha256": "0b76382f7693cc5f9cba7cf1cc1d1037cb040a658328847e8605c7cc0bb51350"
+    },
+    {
+      "original_path": "data/Connor/README.md",
+      "current_path": "data/Connor/SOURCE_NOTES.md",
+      "sha256": "42368aee977c2495a472d3c0b60be8420aab4706ea605e11012314faa961b155"
+    },
+    {
+      "original_path": "data/InjecAgent/collection/README.md",
+      "current_path": "data/InjecAgent/collection/SOURCE_NOTES.md",
+      "sha256": "94f8d9a12bf504d924c4db2cfd65cc9899ff7dbb38e8bfba910ff99b0e855539"
+    },
+    {
+      "original_path": "data/InjecAgent/collection/README.template.md",
+      "current_path": "data/InjecAgent/collection/SOURCE_NOTES.template.md",
+      "sha256": "94f8d9a12bf504d924c4db2cfd65cc9899ff7dbb38e8bfba910ff99b0e855539"
+    },
+    {
+      "original_path": "data/InjecAgent/collection/source_snapshot/README.md",
+      "current_path": "data/InjecAgent/collection/source_snapshot/SOURCE_NOTES.md",
+      "sha256": "09e81a9e68d5c2a1b491456c83da4ef0126426deb7eafa8588349c2dcce278ea"
+    },
+    {
+      "original_path": "data/InjecAgent/README.md",
+      "current_path": "data/InjecAgent/SOURCE_NOTES.md",
+      "sha256": "c60764da634130b667344f845b42f152cd4053f0edba7b26becab6dd8aab92d2"
+    }
+  ]
+}

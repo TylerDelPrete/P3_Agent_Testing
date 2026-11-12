@@ -1,0 +1,12 @@
+[
+  {
+    "name": "traverse_the_directory",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      11,
+      119
+    ],
+    "response_literal_excerpts": []
+  }
+]

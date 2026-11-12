@@ -1,0 +1,12 @@
+[
+  {
+    "name": "clear_temporary_caches",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      7,
+      64
+    ],
+    "response_literal_excerpts": []
+  }
+]

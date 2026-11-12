@@ -1,0 +1,11 @@
+[project]
+name = "poisonattack3"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "mcp[cli]>=1.26.0",
+    "pydantic>=2.12.5",
+    "requests>=2.32.5",
+]

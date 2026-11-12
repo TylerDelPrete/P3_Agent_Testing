@@ -1,0 +1,58 @@
+{
+  "schema_version": "injecagent-full-normalized/2.0",
+  "dataset": "InjecAgent",
+  "repository_url": "https://github.com/uiuc-kang-lab/InjecAgent",
+  "source_commit": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+  "retrieval_time": "2026-10-18T10:24:03-06:00",
+  "record_counts": {
+    "raw_samples.jsonl": 2108,
+    "normalized_samples.jsonl": 2108,
+    "case_summary.csv": 2108,
+    "direct_harm_base": 510,
+    "direct_harm_enhanced": 510,
+    "data_stealing_base": 544,
+    "data_stealing_enhanced": 544
+  },
+  "source_files_sha256_at_commit": {
+    "data/test_cases_dh_base.json": "0a8186468d21389af432e8c7b399ae42264d1b93a07b65c7a489468508604305",
+    "data/test_cases_dh_enhanced.json": "885602716b72c18af80695ce6c2e1f242fa03163bc90b0788b0c5e4ab6216d50",
+    "data/test_cases_ds_base.json": "4daab35c62a3845e8b9400f4dca58b9c9f37e57cd33b2337552557fbb26282e9",
+    "data/test_cases_ds_enhanced.json": "7bc510868df032511053fc40e8470e68a041fb7148d055112093594bf73ab0ce"
+  },
+  "source_snapshot_sha256": {
+    ".gitignore": "cf8b5a9cf8de9aee5473f27220bdf88398e97bac8f626e402ee7770a5961e77d",
+    "LICENCE": "b48589499dbb84caa796b00b4ea652b0443e49660282c44d890fd473b8c0674e",
+    "README.md": "09e81a9e68d5c2a1b491456c83da4ef0126426deb7eafa8588349c2dcce278ea",
+    "data/attacker_cases_dh.jsonl": "999d52e15af3c80a3303a09430af0f3878d1f91e4c573ca7b477a91cdfa6b991",
+    "data/attacker_cases_ds.jsonl": "87952398c989d8ca841724e38ecdbb789676d3841e19dfc44aac7b710df9cb1f",
+    "data/attacker_simulated_responses.json": "b1da2e1fb75f266c069b832fef6738c295f01d8962fae15bdac9ff6625e5594e",
+    "data/test_cases_dh_base.json": "0a8186468d21389af432e8c7b399ae42264d1b93a07b65c7a489468508604305",
+    "data/test_cases_dh_enhanced.json": "885602716b72c18af80695ce6c2e1f242fa03163bc90b0788b0c5e4ab6216d50",
+    "data/test_cases_ds_base.json": "4daab35c62a3845e8b9400f4dca58b9c9f37e57cd33b2337552557fbb26282e9",
+    "data/test_cases_ds_enhanced.json": "7bc510868df032511053fc40e8470e68a041fb7148d055112093594bf73ab0ce",
+    "data/tools.json": "e21a8f70b1d5de4677d6d52642936a322655d79b17a72c84f600550384083a1e",
+    "data/user_cases.jsonl": "c840e2b00fdce68e7142d0970220522303d67b2530d6fb36ef1112448cdd8977",
+    "requirements.txt": "98d6b860115d877e3aae27228d004401592d9b2a0795ae52b32df97a0d7befbd",
+    "src/evaluate_finetuned_agent.py": "3dfd02b5f663ca39b4eb22669ebb0b639a81e38fc7eed63f6a65501a27478cce",
+    "src/evaluate_prompted_agent.py": "9a866bdec0c7da0abed9c0288b0f49404e62e77b8b2b623684d743ca87dbe4ae",
+    "src/models.py": "5d48592c29ee6d3535d1c5f3d2b9de3eea67690eba2a1e7e71e8ec7357fb7900",
+    "src/output_parsing.py": "b841348cdbc5b87c781bed4a592d375d02d51769ac2435cf2e7e69c08a03937b",
+    "src/params.py": "9ff2221b2bc8dca98ddb1ae987b2617b30e9b86fa95af9d59629e05e4e0da0f1",
+    "src/prompts/agent_prompts.py": "f0249e434c46a9944dab9797edee4cd41e4fc6fceb48b8b8004585a7a4866037",
+    "src/prompts/generation_prompts.py": "912d3f77008f3798f832f86df08a4a0fe93ad5be35358f44b379e33a255474f3",
+    "src/prompts/prompt_template.py": "370dfcde5cc3bcb6ebaa7825e90fb7ea7902e641f70a5a658a23306ba5058c9e",
+    "src/utils.py": "ab21487f92cb14840d69dded17f176ceaa60690469e8cf9b141f87d3f9795d06"
+  },
+  "output_files_sha256": {
+    "raw_samples.jsonl": "ac679abfa9108f272a5a6da1f7f5bbed10c9ee4d92ff9ed506fa793fb6f2fabb",
+    "normalized_samples.jsonl": "4089c16dc228ef79dded3a7f41a6b23b90c69a2be447b17f2f4a1d65dd7adc02",
+    "case_summary.csv": "afd364a38a1c6435c0b4fb10da8feab2db07f36894c9c9c085d99cbf0fb38e2a",
+    "link_evidence.json": "db11b6091aeeae5e5ddbdfe1107ebcbd1b983acdda6912922f2a887da71a6d9f",
+    "README.md": "94f8d9a12bf504d924c4db2cfd65cc9899ff7dbb38e8bfba910ff99b0e855539",
+    "validation_output.txt": "a75b84058c54016886857f90640f1d5dcbeaf07f3efe634b77b8c0afaa077b95",
+    "collect_and_validate.py": "8b1a0d2b07f53550b6df766bc2280dc8f56b46ad7271dd145df3d2f538499804",
+    "README.template.md": "94f8d9a12bf504d924c4db2cfd65cc9899ff7dbb38e8bfba910ff99b0e855539"
+  },
+  "validation_all_passed": true,
+  "note": "manifest.json cannot contain its own hash. Binary figures asset/overview.pdf and asset/overview.png were excluded from the snapshot. README.md hash is taken after the README write in this run."
+}

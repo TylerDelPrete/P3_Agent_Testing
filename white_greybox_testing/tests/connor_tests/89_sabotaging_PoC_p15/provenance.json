@@ -1,0 +1,15 @@
+{
+  "source_case_id": "connor-poc-sabotaging_PoC-p15",
+  "sources": [
+    {
+      "path": "data/Connor/collection/normalized_samples.jsonl",
+      "sha256": "39d497f2b67c940fa06e5629702960e43af34edf9bbf09d889627909d03e2b84"
+    },
+    {
+      "path": "data/Connor/collection/source_snapshot/PoCs/sabotaging_PoC/p15/main.py",
+      "sha256": "d596ec6411dd6b8d4c413057d70bb67f054b3db630eb3ea6c67139e66e254af6"
+    }
+  ],
+  "adaptation": "Static tool metadata and response-literal replay. Not an official Connor benchmark or original-server execution.",
+  "path_supported_for_agent_surface_test": true
+}

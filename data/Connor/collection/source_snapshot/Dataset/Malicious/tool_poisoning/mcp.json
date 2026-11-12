@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "namespace_poc": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/app/tool_poisoning_poc",
+        "run",
+        "main.py"
+      ]
+    }
+  }
+}

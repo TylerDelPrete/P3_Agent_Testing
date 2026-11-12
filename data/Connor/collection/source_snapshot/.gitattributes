@@ -1,0 +1,5 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# This snapshot intentionally preserves only the upstream pointer text.
+# The benign archive is not part of the collected research fixtures.
+Dataset/Benign/benign_servers.zip -filter -diff -merge -text

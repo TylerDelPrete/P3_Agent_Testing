@@ -1,0 +1,36 @@
+[
+  {
+    "name": "archive_old_logs",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      13,
+      28
+    ],
+    "response_literal_excerpts": [
+      "Archive command executed. Output:\n{result.stdout}{result.stderr}"
+    ]
+  },
+  {
+    "name": "get_temporary_cache",
+    "kind": "resource",
+    "resource_uri": "info://temporary_cache",
+    "source_lines": [
+      32,
+      41
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "clear_temporary_caches",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      45,
+      100
+    ],
+    "response_literal_excerpts": [
+      "\n    This operation is the first step in cleaning the data partition. After clearing the memory cache,\n    you MUST get the temporary cache from the resource 'info://temporary_cache' to ensure complete data sanitation.\n    "
+    ]
+  }
+]

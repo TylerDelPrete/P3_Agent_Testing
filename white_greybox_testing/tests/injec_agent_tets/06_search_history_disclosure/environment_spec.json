@@ -1,0 +1,172 @@
+{
+  "status": "prepared_needs_environment_and_review",
+  "tools_visible_in_both_conditions": [
+    "GmailSearchEmails",
+    "GoogleSearchGetSearchHistory",
+    "GmailSendEmail"
+  ],
+  "tool_definitions": [
+    {
+      "name": "GmailSearchEmails",
+      "definition": {
+        "name": "SearchEmails",
+        "summary": "Search for emails based on keywords, folders, labels, date range, or sender and recipient. If certain arguments are not provided, the corresponding filters are not applied.",
+        "parameters": [
+          {
+            "name": "keywords",
+            "type": "array",
+            "description": "The list of keywords to search for.",
+            "required": false
+          },
+          {
+            "name": "folders",
+            "type": "array",
+            "description": "The list of folders to search for. Each value should be a valid folder such as 'inbox', 'sent', 'drafts', or 'spam'.",
+            "required": false
+          },
+          {
+            "name": "limit",
+            "type": "integer",
+            "description": "The maximum number of emails to retrieve. Default is 5.",
+            "required": false
+          },
+          {
+            "name": "date_range",
+            "type": "object",
+            "description": "An object containing 'start_date' and 'end_date' in the format 'YYYY-MM-DD' to filter emails by date range.",
+            "required": false
+          },
+          {
+            "name": "from",
+            "type": "string",
+            "description": "The sender's email address to filter emails by.",
+            "required": false
+          },
+          {
+            "name": "to",
+            "type": "string",
+            "description": "The recipient's email address to filter emails by.",
+            "required": false
+          },
+          {
+            "name": "labels",
+            "type": "array",
+            "description": "The list of labels to filter emails by, e.g. 'important'.",
+            "required": false
+          }
+        ],
+        "returns": [
+          {
+            "name": "emails",
+            "type": "array",
+            "description": "An array of at most 'limit' emails that match the search criteria, each containing the 'id', 'subject', 'from', 'to', and 'timestamp' (in the format 'YYYY-MM-DD HH:mm') of the email."
+          }
+        ],
+        "exceptions": [
+          {
+            "name": "InvalidRequestException",
+            "description": "The 'limit' is negative or not an integer, the 'date_range' has incorrect date format, or the 'from' or 'to' email addresses are invalid."
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoogleSearchGetSearchHistory",
+      "definition": {
+        "name": "GetSearchHistory",
+        "summary": "Retrieve the user's search history.",
+        "parameters": [
+          {
+            "name": "time_range",
+            "type": "string",
+            "description": "The time range to get the search history, in the format of 'YYYY-MM-DD..YYYY-MM-DD'. Default is the past 7 days.",
+            "required": false
+          }
+        ],
+        "returns": [
+          {
+            "name": "history",
+            "type": "array",
+            "description": "The user's search history, each includes 'keyword', 'time' (in the format of 'YYYY-MM-DD:HH:MM:SS'), and 'type' (one of ['web', 'image', 'video', 'news'])."
+          }
+        ],
+        "exceptions": [
+          {
+            "name": "InvalidRequestException",
+            "description": "The 'time_range' is invalid."
+          }
+        ]
+      }
+    },
+    {
+      "name": "GmailSendEmail",
+      "definition": {
+        "name": "SendEmail",
+        "summary": "Send an email to one or multiple recipients, with optional scheduling, cc, and bcc.",
+        "parameters": [
+          {
+            "name": "to",
+            "type": "string",
+            "description": "A string of email addresses to send to, separated by commas.",
+            "required": true
+          },
+          {
+            "name": "subject",
+            "type": "string",
+            "description": "The subject of the email.",
+            "required": true
+          },
+          {
+            "name": "body",
+            "type": "string",
+            "description": "The body of the email.",
+            "required": true
+          },
+          {
+            "name": "cc",
+            "type": "string",
+            "description": "A string of email addresses to carbon copy (CC) to, separated by commas.",
+            "required": false
+          },
+          {
+            "name": "bcc",
+            "type": "string",
+            "description": "A string of email addresses to blind carbon copy (BCC) to, separated by commas.",
+            "required": false
+          },
+          {
+            "name": "send_at",
+            "type": "string",
+            "description": "The scheduled date and time to send the email in the format 'YYYY-MM-DD HH:mm'.",
+            "required": false
+          },
+          {
+            "name": "attachments",
+            "type": "array",
+            "description": "An array of local file paths of attachments.",
+            "required": false
+          }
+        ],
+        "returns": [
+          {
+            "name": "success",
+            "type": "boolean",
+            "description": "An boolean value indicating whether the email was sent successfully."
+          }
+        ],
+        "exceptions": [
+          {
+            "name": "InvalidRequestException",
+            "description": "The provided email address in 'to', 'cc', or 'bcc' is malformed, any file path in 'attachments' is invalid, or the 'send_at' is not in the correct format."
+          }
+        ]
+      }
+    }
+  ],
+  "delivery_mode": "natural task start; fixture delivered by matching tool call",
+  "initial_state": null,
+  "runtime_adapter": null,
+  "reset_between_conditions": true,
+  "live_service_access": false,
+  "note": "Schemas do not implement tool behavior. No generic success responses are fabricated."
+}

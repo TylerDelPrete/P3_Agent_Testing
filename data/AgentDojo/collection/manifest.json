@@ -1,0 +1,1029 @@
+{
+ "schema_version": "agentdojo-static-normalized/1.0",
+ "dataset": "AgentDojo",
+ "repository_url": "https://github.com/ethz-spylab/agentdojo",
+ "commit_hash": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+ "commit_committer_date_utc": "2026-06-02T09:59:58Z",
+ "commit_tree_sha": "45cc40920b8ddca28e675505fdd6a92139008ab3",
+ "commit_message_first_line": "Add openai-compatible provider for arbitrary OpenAI-compatible endpoints (#147)",
+ "retrieved_at": {
+  "utc": "2026-10-18T16:23:59Z",
+  "america_denver": "2026-10-18T10:23:59-06:00 (MDT)"
+ },
+ "retrieval_sources": {
+  "tarball": "https://codeload.github.com/ethz-spylab/agentdojo/tar.gz/089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "tree": "https://api.github.com/repos/ethz-spylab/agentdojo/git/trees/089ed468cf3ed0322acc66b0211f26d9d90dbf60?recursive=1",
+  "commit": "https://api.github.com/repos/ethz-spylab/agentdojo/commits/089ed468cf3ed0322acc66b0211f26d9d90dbf60"
+ },
+ "tarball_sha256": "d7e0ee021be27a69e7e66647979b5a5e0dd10030d38d04ce4102e18a76a228d8",
+ "tarball_pax_comment_commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+ "git_blob_verification": {
+  "blobs_in_tree": 36860,
+  "files_in_tarball": 36860,
+  "mismatched_or_missing": 0,
+  "tree_blobs_missing_from_tarball": 0
+ },
+ "snapshot_policy": "Every file of the pinned commit except runs/** is preserved under source_snapshot/ at its repository path. runs/** is inventoried in runs_inventory.csv (sha256 + git blob check) but not copied.",
+ "counts": {
+  "definitions": {
+   "user_task_definitions": 145,
+   "attacker_task_definitions": 54,
+   "user_task_definitions_class": 130,
+   "user_task_definitions_combinator": 15,
+   "definitions_not_effective_in_any_version": 10,
+   "definitions_dormant_not_reachable_from_load_suites": 8,
+   "definitions_overwritten_in_same_slot": 2
+  },
+  "per_benchmark_version": {
+   "v1": {
+    "workspace": {
+     "suite_version": "1.0.0",
+     "user_tasks": 40,
+     "attacker_tasks": 6,
+     "tools": 24,
+     "injection_vectors": 16,
+     "fixture_files": 5
+    },
+    "travel": {
+     "suite_version": "1.0.0",
+     "user_tasks": 20,
+     "attacker_tasks": 7,
+     "tools": 28,
+     "injection_vectors": 13,
+     "fixture_files": 2
+    },
+    "banking": {
+     "suite_version": "1.0.0",
+     "user_tasks": 16,
+     "attacker_tasks": 9,
+     "tools": 11,
+     "injection_vectors": 4,
+     "fixture_files": 2
+    },
+    "slack": {
+     "suite_version": "1.0.0",
+     "user_tasks": 21,
+     "attacker_tasks": 5,
+     "tools": 11,
+     "injection_vectors": 6,
+     "fixture_files": 2
+    }
+   },
+   "v1.1": {
+    "workspace": {
+     "suite_version": "1.0.0",
+     "user_tasks": 40,
+     "attacker_tasks": 6,
+     "tools": 24,
+     "injection_vectors": 16,
+     "fixture_files": 5
+    },
+    "travel": {
+     "suite_version": "1.1.0",
+     "user_tasks": 20,
+     "attacker_tasks": 7,
+     "tools": 28,
+     "injection_vectors": 13,
+     "fixture_files": 2
+    },
+    "banking": {
+     "suite_version": "1.0.0",
+     "user_tasks": 16,
+     "attacker_tasks": 9,
+     "tools": 11,
+     "injection_vectors": 4,
+     "fixture_files": 2
+    },
+    "slack": {
+     "suite_version": "1.0.0",
+     "user_tasks": 21,
+     "attacker_tasks": 5,
+     "tools": 11,
+     "injection_vectors": 6,
+     "fixture_files": 2
+    }
+   },
+   "v1.1.1": {
+    "workspace": {
+     "suite_version": "1.1.1",
+     "user_tasks": 40,
+     "attacker_tasks": 6,
+     "tools": 24,
+     "injection_vectors": 16,
+     "fixture_files": 5
+    },
+    "travel": {
+     "suite_version": "1.1.1",
+     "user_tasks": 20,
+     "attacker_tasks": 7,
+     "tools": 28,
+     "injection_vectors": 13,
+     "fixture_files": 2
+    },
+    "banking": {
+     "suite_version": "1.1.1",
+     "user_tasks": 16,
+     "attacker_tasks": 9,
+     "tools": 11,
+     "injection_vectors": 4,
+     "fixture_files": 2
+    },
+    "slack": {
+     "suite_version": "1.1.1",
+     "user_tasks": 21,
+     "attacker_tasks": 5,
+     "tools": 11,
+     "injection_vectors": 6,
+     "fixture_files": 2
+    }
+   },
+   "v1.1.2": {
+    "workspace": {
+     "suite_version": "1.1.2",
+     "user_tasks": 40,
+     "attacker_tasks": 6,
+     "tools": 24,
+     "injection_vectors": 16,
+     "fixture_files": 5
+    },
+    "travel": {
+     "suite_version": "1.1.2",
+     "user_tasks": 20,
+     "attacker_tasks": 7,
+     "tools": 28,
+     "injection_vectors": 13,
+     "fixture_files": 2
+    },
+    "banking": {
+     "suite_version": "1.1.1",
+     "user_tasks": 16,
+     "attacker_tasks": 9,
+     "tools": 11,
+     "injection_vectors": 4,
+     "fixture_files": 2
+    },
+    "slack": {
+     "suite_version": "1.1.1",
+     "user_tasks": 21,
+     "attacker_tasks": 5,
+     "tools": 11,
+     "injection_vectors": 6,
+     "fixture_files": 2
+    }
+   },
+   "v1.2": {
+    "workspace": {
+     "suite_version": "1.2.0",
+     "user_tasks": 40,
+     "attacker_tasks": 14,
+     "tools": 24,
+     "injection_vectors": 16,
+     "fixture_files": 5
+    },
+    "travel": {
+     "suite_version": "1.2.0",
+     "user_tasks": 20,
+     "attacker_tasks": 7,
+     "tools": 28,
+     "injection_vectors": 13,
+     "fixture_files": 2
+    },
+    "banking": {
+     "suite_version": "1.2.0",
+     "user_tasks": 16,
+     "attacker_tasks": 9,
+     "tools": 11,
+     "injection_vectors": 4,
+     "fixture_files": 2
+    },
+    "slack": {
+     "suite_version": "1.2.0",
+     "user_tasks": 21,
+     "attacker_tasks": 5,
+     "tools": 11,
+     "injection_vectors": 6,
+     "fixture_files": 2
+    }
+   },
+   "v1.2.1": {
+    "workspace": {
+     "suite_version": "1.2.1",
+     "user_tasks": 40,
+     "attacker_tasks": 14,
+     "tools": 24,
+     "injection_vectors": 16,
+     "fixture_files": 5
+    },
+    "travel": {
+     "suite_version": "1.2.0",
+     "user_tasks": 20,
+     "attacker_tasks": 7,
+     "tools": 28,
+     "injection_vectors": 13,
+     "fixture_files": 2
+    },
+    "banking": {
+     "suite_version": "1.2.0",
+     "user_tasks": 16,
+     "attacker_tasks": 9,
+     "tools": 11,
+     "injection_vectors": 4,
+     "fixture_files": 2
+    },
+    "slack": {
+     "suite_version": "1.2.0",
+     "user_tasks": 21,
+     "attacker_tasks": 5,
+     "tools": 11,
+     "injection_vectors": 6,
+     "fixture_files": 2
+    }
+   },
+   "v1.2.2": {
+    "workspace": {
+     "suite_version": "1.2.2",
+     "user_tasks": 40,
+     "attacker_tasks": 14,
+     "tools": 24,
+     "injection_vectors": 16,
+     "fixture_files": 5
+    },
+    "travel": {
+     "suite_version": "1.2.0",
+     "user_tasks": 20,
+     "attacker_tasks": 7,
+     "tools": 28,
+     "injection_vectors": 13,
+     "fixture_files": 2
+    },
+    "banking": {
+     "suite_version": "1.2.2",
+     "user_tasks": 16,
+     "attacker_tasks": 9,
+     "tools": 11,
+     "injection_vectors": 4,
+     "fixture_files": 2
+    },
+    "slack": {
+     "suite_version": "1.2.0",
+     "user_tasks": 21,
+     "attacker_tasks": 5,
+     "tools": 11,
+     "injection_vectors": 6,
+     "fixture_files": 2
+    }
+   }
+  },
+  "suites": 4,
+  "benchmark_versions": 7,
+  "tools_unique_functions": 69,
+  "tools_per_suite": {
+   "banking": 11,
+   "slack": 11,
+   "travel": 28,
+   "workspace": 24
+  },
+  "injection_vectors": 39,
+  "attack_generators_registered": 17,
+  "relationships_total": 2520,
+  "relationships_by_type": {
+   "attack_generator_registered": 17,
+   "combined_task_component": 30,
+   "fixture_includes_file": 3,
+   "injection_vector_placeholder_in_fixture": 41,
+   "suite_declares_injection_vector": 39,
+   "suite_exposes_tool": 74,
+   "suite_uses_fixture_file": 11,
+   "task_definition_supersedes": 57,
+   "task_effective_in_benchmark_version": 892,
+   "task_ground_truth_calls_tool": 570,
+   "task_has_evaluator": 386,
+   "task_registered_in_suite": 199,
+   "task_slot_overwritten_by": 2,
+   "task_uses_suite_fixture": 199
+  },
+  "raw_samples": 199,
+  "normalized_samples": 199,
+  "version_matrix_rows": 892,
+  "source_snapshot_files": 181,
+  "runs_files_inventoried": 36679,
+  "runs_pipelines": 29,
+  "trajectory_links": 4
+ },
+ "runs_summary": {
+  "Meta-SecAlign-70B-repeat_user_prompt": {
+   "files": 2979,
+   "bytes": 44567087,
+   "suites": {
+    "banking": 457,
+    "slack": 341,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2979
+   }
+  },
+  "Meta-SecAlign-70B": {
+   "files": 2979,
+   "bytes": 38091837,
+   "suites": {
+    "banking": 457,
+    "slack": 341,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2979
+   }
+  },
+  "claude-3-5-sonnet-20240620": {
+   "files": 753,
+   "bytes": 8700183,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-5-sonnet-20241022": {
+   "files": 753,
+   "bytes": 7198135,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-7-sonnet-20250219": {
+   "files": 1081,
+   "bytes": 12714916,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 614
+   },
+   "attack_dirs": {
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "None": 1081
+   }
+  },
+  "claude-3-haiku-20240307": {
+   "files": 753,
+   "bytes": 15958511,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-opus-20240229": {
+   "files": 753,
+   "bytes": 11165919,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-sonnet-20240229-repeat_user_prompt": {
+   "files": 40,
+   "bytes": 1263711,
+   "suites": {
+    "workspace": 40
+   },
+   "attack_dirs": {
+    "none": 40
+   },
+   "json_benchmark_versions": {
+    "None": 40
+   }
+  },
+  "claude-3-sonnet-20240229": {
+   "files": 753,
+   "bytes": 13733402,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "command-r-plus": {
+   "files": 753,
+   "bytes": 4820198,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "command-r": {
+   "files": 753,
+   "bytes": 5499429,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-flash-001": {
+   "files": 753,
+   "bytes": 6895149,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-flash-002": {
+   "files": 753,
+   "bytes": 4217905,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-pro-001": {
+   "files": 753,
+   "bytes": 6943050,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-pro-002": {
+   "files": 753,
+   "bytes": 6474120,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-2.0-flash-001": {
+   "files": 1081,
+   "bytes": 6535189,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 614
+   },
+   "attack_dirs": {
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "None": 1081
+   }
+  },
+  "gemini-2.0-flash-exp": {
+   "files": 753,
+   "bytes": 4654209,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-3.5-turbo-0125": {
+   "files": 753,
+   "bytes": 7347987,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4-0125-preview": {
+   "files": 753,
+   "bytes": 7458124,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4-turbo-2024-04-09": {
+   "files": 753,
+   "bytes": 6531659,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-repeat_user_prompt": {
+   "files": 753,
+   "bytes": 10061514,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-spotlighting_with_delimiting": {
+   "files": 753,
+   "bytes": 7358432,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-tool_filter": {
+   "files": 753,
+   "bytes": 7109699,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-transformers_pi_detector": {
+   "files": 753,
+   "bytes": 6532421,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13": {
+   "files": 6899,
+   "bytes": 64630710,
+   "suites": {
+    "banking": 1545,
+    "slack": 1181,
+    "travel": 1527,
+    "workspace": 2646
+   },
+   "attack_dirs": {
+    "captcha_dos": 97,
+    "direct": 629,
+    "dos": 97,
+    "felony_dos": 97,
+    "ignore_previous": 629,
+    "important_instructions": 629,
+    "important_instructions_no_model_name": 629,
+    "important_instructions_no_names": 629,
+    "important_instructions_no_user_name": 629,
+    "important_instructions_wrong_model_name": 629,
+    "important_instructions_wrong_user_name": 629,
+    "injecagent": 629,
+    "none": 124,
+    "offensive_email_dos": 97,
+    "swearwords_dos": 97,
+    "tool_knowledge": 629
+   },
+   "json_benchmark_versions": {
+    "None": 6899
+   }
+  },
+  "gpt-4o-mini-2024-07-18": {
+   "files": 753,
+   "bytes": 8201204,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "meta-llama_Llama-3-70b-chat-hf": {
+   "files": 753,
+   "bytes": 5743105,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt": {
+   "files": 2828,
+   "bytes": 60101110,
+   "suites": {
+    "banking": 411,
+    "slack": 236,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 798,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2828
+   }
+  },
+  "meta-llama_Llama-3.3-70B-Instruct": {
+   "files": 2979,
+   "bytes": 35784498,
+   "suites": {
+    "banking": 457,
+    "slack": 341,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2979
+   }
+  }
+ },
+ "file_sha256": {
+  "README.md": "80f05b07f789f7113c67647855c4581a7be309f185f3db22ed8c806f1d1a3ac2",
+  "attacks.jsonl": "f85d85357253edccef803222b200b0259e03ca5fa4636a1101b90ce5b8316359",
+  "case_summary.csv": "65ea749906d6e9957d53826a9f80e8bf541ce229b807cd9d1dc3ef762bd36ec1",
+  "collect_and_validate.py": "3ff0ba86e34888f66a18d24aaf111bfc8c1507ae8e62bcf2555fa6cba92fda66",
+  "git_commit_metadata.json": "c1b1d8e947efae7da2d31f94dab2f4a168ee57f64451541e2771028ed882d430",
+  "git_tree_listing.json": "22a7a375b7b946574d9afd4b850c4084c23c8a8f29bbbe7b711f2b878dc31656",
+  "injection_vectors.jsonl": "cd5de655ce207f2347b369858d5432dcc71c76e9f49b1f2638c5f58991e5be7f",
+  "normalized_samples.jsonl": "778b58217e6869fd899dd87e7bfb80bfca3c9f2aa58201c6cd088103cd2b399f",
+  "raw_samples.jsonl": "074e0f1326f26e47a218c7b65264d2759293a26eed9442c71a9307a9773914b4",
+  "relationships.jsonl": "a52df2c82c72b4dfb6d03369528a00b8adbf7e91c94f48f59eff01c64c7445e1",
+  "runs_inventory.csv": "8a9181b5a2d9982f790478222553709916c7302fcf4f2dd9b960b5be26e45cb7",
+  "source_snapshot/.devcontainer/Dockerfile": "e45d92635b252b4dc701f8364fe903640ac29339a4858a4396f22a1b7181da96",
+  "source_snapshot/.devcontainer/devcontainer.json": "254422eabf83b888fe6f61851f39488f778aa73bd6606bacc4ecf60c2a0aa923",
+  "source_snapshot/.devcontainer/init-firewall.sh": "ed9f1784237e74b3e4f4d98b86a4cf4f77f48cd923af41088ce454553cba8dbe",
+  "source_snapshot/.github/workflows/CODEOWNERS": "a1c9f524d06303d9c511df890e51f1e202ffdb61f211bd22ae113915fa3a9917",
+  "source_snapshot/.github/workflows/lint-docs.yaml": "bcb9614831b476fb0df83ac2afc23ff637305d1d06bd771a46aa4ad581f1f533",
+  "source_snapshot/.github/workflows/publish.yaml": "abfc7ad20a21c9bac20b21d5a5a3ce894b7dcadbad9616a9db2df40e77d62ec9",
+  "source_snapshot/.gitignore": "f2d8d711ed0beaaf2d210eeaafa9c490912082d39fd53fd604d825c5a299b9c6",
+  "source_snapshot/.pre-commit-config.yaml": "ca25278887793dd3a0ef308b7532a13edddae868c143ae6a4dfbfcbb25a08f19",
+  "source_snapshot/.python-version": "657062bd6c016c431fe7658173ba3611697eeb21357fd82faef0b7d21a491c3f",
+  "source_snapshot/CITATION.bib": "b97dc76c5e3a6a9adb0f53861fa1ebff626a5782e4204047caed1c5eba041084",
+  "source_snapshot/CLAUDE.md": "932a97dfd3931e7d7d9b3002d5b5ca947fc754b2e58b2b50e4953253d25d6395",
+  "source_snapshot/CONTRIBUTING.md": "173bdacfde08f0ff5437175a540aeb6d18609053ad8e641c86450c72a3e209fc",
+  "source_snapshot/LICENSE": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e",
+  "source_snapshot/README.md": "d8c6460ecce9bbf59ed300fbc74b4440188f74cd147a7611836270be49e7660e",
+  "source_snapshot/docs/CNAME": "8ad37406e4113826f8e0dfed35a1f2b2f30d6b4e7f70bc2e3d29ce057f86c72d",
+  "source_snapshot/docs/api/agent_pipeline/basic_elements.md": "924bdfaeb6cbbcb2d66ad7f3634fd838d6699a093ef2b0cb3ec4a13653c0d42a",
+  "source_snapshot/docs/api/agent_pipeline/defenses.md": "33689e8b5ac1271b0ba05f0d90c354126231738cfd3d997a9bd0fd83e08eba01",
+  "source_snapshot/docs/api/agent_pipeline/llms.md": "85d26c8a6e508bca945e48bbc238ca6c47e5b83a15dd3dff8251c78c404d2a44",
+  "source_snapshot/docs/api/attacks/base_attacks.md": "4d5c5f6ccae9682bbcf0feadb9e6fe831257f960778451be62b7fcfc5167f6e3",
+  "source_snapshot/docs/api/attacks/baseline_attacks.md": "140767c3b4d1e663fea03efd64945edd9fd338bd4848214a50235805e948b4f1",
+  "source_snapshot/docs/api/attacks/dos_attacks.md": "d0685c78cb65fe7d1bcb499eb897957f9289ff344b7d17d8f53066ad87b61a23",
+  "source_snapshot/docs/api/attacks/registering_and_loading_attacks.md": "07177e79afbf060944ce7a9cef5ad592d3c03e32793bab97c24d7d89e87f1bb7",
+  "source_snapshot/docs/api/base_tasks.md": "1db384c88bd232208b6599aa67ef7c81499cec1410e89c53a9b76105928192a8",
+  "source_snapshot/docs/api/benchmark.md": "e1a1ef22f5ac41f7bcbeb65ac6b7a594019cf77ccf1d690f84fd229e87f2cbae",
+  "source_snapshot/docs/api/functions_runtime.md": "ce89e492bee4aa89b380788dc17f39b1277761d91577c6040400b4e7a976e2a2",
+  "source_snapshot/docs/api/task_suite.md": "5613540277641ff0099987150f8885c256cc62d83b0f0a3dc8f40c4dc9a27172",
+  "source_snapshot/docs/api/types.md": "62f0ac9493eb28b524f6fade6eabf3bace8c41b93812be545aab4b750fabf6a8",
+  "source_snapshot/docs/changelog.md": "21dde6d1c75e2b559e32fd0dd6fbeac8c4f78f1297b5412208a38ecc171dcdfc",
+  "source_snapshot/docs/concepts/agent_pipeline.md": "5d98bbacff461d77245c0dda2958534422dc4988acb1e7aa265200717fa1a364",
+  "source_snapshot/docs/concepts/attacks.md": "58a0cb1a1c5cf109aff008ca313deabed17f9c2a52aeeb3022f13f5da532435f",
+  "source_snapshot/docs/concepts/functions_runtime.md": "fa2f192658d1fa43548bedbb60b9e353dfa12d6a2c08fd43fc228869e782a6f2",
+  "source_snapshot/docs/concepts/task_suite_and_tasks.md": "1cdb32ebe9de269cc5913599fe842ad9e901a63560ab522eb00fd79479bbe51a",
+  "source_snapshot/docs/development.md": "6347c73b1e87a807acbaca8ed816976be2d68bc640b853767a14778bd77ac49a",
+  "source_snapshot/docs/index.md": "53780de2a58ea661bba37a55eb654a9a8b36c937bd3f0c835a690c8ae21a4d07",
+  "source_snapshot/docs/results-table.html": "bdd665fd32069666d3d89e2f54a9b6c12a38798f0e3824b5fe5b6488021d0925",
+  "source_snapshot/docs/results.md": "96fa2d1615426809ece5e987880f124c3150b6d221d2b12306ff5c73e7b3a32e",
+  "source_snapshot/examples/README.md": "f2a59639b8955f92b03735b7b4f2e8902ed18388fde15c939060f503b2843a83",
+  "source_snapshot/examples/attack.py": "d04635eccaefcf5eb6b4d7fb676fd922b302e9bb212488a44d9e4b2e7fd40041",
+  "source_snapshot/examples/counter_benchmark/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/examples/counter_benchmark/benchmark.py": "4e68d7b0ad1409a086d32080748cf989b9a3f05d44923ecaebf341cfbe02b3ed",
+  "source_snapshot/examples/counter_benchmark/data/suites/counter/environment.yaml": "c40f464e54adc0671697284d92eca2108d79b3d4fb7bcd293e50b966ce2e7d9e",
+  "source_snapshot/examples/counter_benchmark/data/suites/counter/injection_vectors.yaml": "0f42c72575d7a56dbf3e0dbe18df9d8b5e4512f891b61b48a047c81dfbe8c3fb",
+  "source_snapshot/examples/counter_benchmark/suites/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/examples/counter_benchmark/suites/counter/__init__.py": "0a2f99e8c63bfcec1eda881113207bb358bedd105c7fb9f31c926563571b9864",
+  "source_snapshot/examples/counter_benchmark/suites/counter/injection_tasks.py": "75ed50b196edae9325e930359d40ea68287f716a04024ec6ae307cfc86dfc2ba",
+  "source_snapshot/examples/counter_benchmark/suites/counter/task_suite.py": "fe5e8bc13920abedb3e5bf79ee86a6d1a72b65615a2e50e57887d4cee4e48302",
+  "source_snapshot/examples/counter_benchmark/suites/counter/user_tasks.py": "139c59aee61786aef135a2ce649be239aef236e32a15912d970d72f74fdd1766",
+  "source_snapshot/examples/counter_benchmark/suites/tools.py": "c05bae5800359eda737540c8ab93d1e78286d34eb6f5040f973ab17ea74c331d",
+  "source_snapshot/examples/functions_runtime.py": "ce176f49ae634baeb6b8c7d5fe3b506f659e49aa9ad987bfcb816bb0e2baf5cc",
+  "source_snapshot/examples/pipeline.py": "610fc8510bfefe8440eb6c4053919b2ae62272a2e04e07d67aa81bc715cf920f",
+  "source_snapshot/mkdocs.yml": "ba7c474e71a134968025c31e4a76e983caa982f01a51f9996026c0116d385e70",
+  "source_snapshot/notebooks/agent_pipeline_example.ipynb": "e1e2e2cb1dad238a8f5897257e4a03d32ea7bef97b7a1c50dd1c35c97ee0aea3",
+  "source_snapshot/notebooks/analysis.ipynb": "7e05b1dab8fb140385012461d8c0fe610f663866944d3adcc6ec0238e2635f82",
+  "source_snapshot/pyproject.toml": "f69dde819258d5dc2c6dca13ecbb116e54904374879a5c921332db36474e0a3b",
+  "source_snapshot/src/agentdojo/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "source_snapshot/src/agentdojo/agent_pipeline/__init__.py": "b86f458f03f25bc322e897b63348eef2d0480bdd4abcdd80f321d85902fcd80f",
+  "source_snapshot/src/agentdojo/agent_pipeline/agent_pipeline.py": "ed50995dafa8e9678c214387ef366b4487fb1bdff52d47cfa2c20f975376ad48",
+  "source_snapshot/src/agentdojo/agent_pipeline/base_pipeline_element.py": "b15f0eb72a286fdfd26f45a3ac587fd4f44063c2a49ed017d580f5f3f0d1fc34",
+  "source_snapshot/src/agentdojo/agent_pipeline/basic_elements.py": "0c35aae9ae3fb8dfdbc5bc7534db51349632ac9743331234f3ee6a86583a5962",
+  "source_snapshot/src/agentdojo/agent_pipeline/errors.py": "1a828a45524b0e64c3e4abdab342fba721581134b7808dd00f02fa5bc5ca52e1",
+  "source_snapshot/src/agentdojo/agent_pipeline/ground_truth_pipeline.py": "acfb119e091589beafc53e98e8371088014d703c4e3f227c09732a86596ad194",
+  "source_snapshot/src/agentdojo/agent_pipeline/llms/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/agent_pipeline/llms/anthropic_llm.py": "381d91588b533fd3d78688730a4e95adf6c5d328eb4114754b43bc364d27694e",
+  "source_snapshot/src/agentdojo/agent_pipeline/llms/cohere_llm.py": "46bda8fe1df1131df7af448a435a33e469431009ab6fccab1544da849eddea1d",
+  "source_snapshot/src/agentdojo/agent_pipeline/llms/google_llm.py": "ed9c2d032733a00ea0592f561b6f612f4677aa43f70ac585a7c9741bc83104dc",
+  "source_snapshot/src/agentdojo/agent_pipeline/llms/local_llm.py": "11dae03f5abf634a6380f419ccf308c0e12cbb07af00355aaa249ff8f1b14acc",
+  "source_snapshot/src/agentdojo/agent_pipeline/llms/openai_llm.py": "009a04eaa07bbacffe4de45c4c9928b76d4a74d4119214403e22728672e2bf14",
+  "source_snapshot/src/agentdojo/agent_pipeline/llms/prompting_llm.py": "e3ddbb7bb8e494ce5840f5dd51f7ad3b5e52bf7c08178e177903214231fa140c",
+  "source_snapshot/src/agentdojo/agent_pipeline/pi_detector.py": "9008a2c063ed5cf826f4de23468d4f78369b127782d398a4e5933561e746ecb8",
+  "source_snapshot/src/agentdojo/agent_pipeline/planner.py": "b5bb490fb3e88ebcc1f995c87b8bdf438419bc67b06ae8d3e812b9fcb3ee851b",
+  "source_snapshot/src/agentdojo/agent_pipeline/tool_execution.py": "96842ef579714cdc7f854bc13d4bca2be0c27897abc29dad2e1ba33ce3b11bdc",
+  "source_snapshot/src/agentdojo/ast_utils.py": "89799be22b4775764ed48c924cbbb5d91af50c8589fea761275cfc185ab9cd7f",
+  "source_snapshot/src/agentdojo/attacks/__init__.py": "e5f2a950166c3ef6974ce8f8fcb7ab7dd33a6cd3496205b10c7bd907aa4287b6",
+  "source_snapshot/src/agentdojo/attacks/attack_registry.py": "cdbfefa137485531fa3ff33f3235b769d5116b4a1a4544b0fe48bffe212aafe5",
+  "source_snapshot/src/agentdojo/attacks/base_attacks.py": "d962c68a8a6cd41c33eac0a2fd27fe38d77dfb3e2f85425b2c2fda63c920b62b",
+  "source_snapshot/src/agentdojo/attacks/baseline_attacks.py": "0e3f3cec2173524989d67bd3d934d032774ad3fc5995969c9565613efaa21c6d",
+  "source_snapshot/src/agentdojo/attacks/dos_attacks.py": "160aa9604ce31cd3e54ecb06d9ed4acc770066a0dedd11d0742f6205d6077859",
+  "source_snapshot/src/agentdojo/attacks/important_instructions_attacks.py": "519f24e0b9d72f43343d665679adacc33758b50cd1b586a81fa53fb098dcfe71",
+  "source_snapshot/src/agentdojo/base_tasks.py": "08d3a4646d1a250968045b0f933803335650a4ed04c9d2387b17d08b1e0427c5",
+  "source_snapshot/src/agentdojo/benchmark.py": "eb74af7595194314ab54889b4ca7653f7f60b101e81167c035e384eeb2378163",
+  "source_snapshot/src/agentdojo/data/suites/banking/environment.yaml": "3f539da1d97779b244cd122afc683dc69d602f338e1b3c42d126cbde33611c8b",
+  "source_snapshot/src/agentdojo/data/suites/banking/injection_vectors.yaml": "4eb98a601c108d9b4d88f5d3f2dbf455f775a718975a0ae2624b4cf0d0f6f819",
+  "source_snapshot/src/agentdojo/data/suites/slack/environment.yaml": "0ea2f9b83e5ffaae0bf50fab2b13d6c8ee59a952f791b16c9554fdc48935c87d",
+  "source_snapshot/src/agentdojo/data/suites/slack/injection_vectors.yaml": "efc01621ffa7955ee10e00e916ac933a41bd8347ba285e1e4888813bf5e0d3a2",
+  "source_snapshot/src/agentdojo/data/suites/travel/environment.yaml": "ca8ef591bde5a8d8b9e2efe6830b8e4646c43f633c86f14cb878f588bb4b8a3c",
+  "source_snapshot/src/agentdojo/data/suites/travel/injection_vectors.yaml": "a6ab848b39d862439e7b4844a617e578294de93cd0176c1851184dd901edb51c",
+  "source_snapshot/src/agentdojo/data/suites/workspace/environment.yaml": "08a22c4eac0f72012e23c135cf3157b6fa7b35881b57bd2e910a5b059c02d157",
+  "source_snapshot/src/agentdojo/data/suites/workspace/gpt_prompts.txt": "2fa475cc5a4e2df6cb7cd944cc1291aaa69191d4e388fd88c36521c877b13cda",
+  "source_snapshot/src/agentdojo/data/suites/workspace/include/calendar.yaml": "69b0ae96804e986b5a0dba694ad6ca34cf01c8c6b57bb8ceb618d9ed8640b803",
+  "source_snapshot/src/agentdojo/data/suites/workspace/include/cloud_drive.yaml": "a9731cd49fe7eb726e43c1727c40eff0d6ca2d85d53728aa744860a8c4214130",
+  "source_snapshot/src/agentdojo/data/suites/workspace/include/inbox.yaml": "e6fac364bfb0e89d3d0251ef8079ffa2791504673a426029034356b8228f2082",
+  "source_snapshot/src/agentdojo/data/suites/workspace/injection_vectors.yaml": "3390ac3da090ea0fde5f50ef0a74bf260786b35ab6ff14d47a199ecb41a15489",
+  "source_snapshot/src/agentdojo/data/system_messages.yaml": "b65b4fa81ee473447ae6314b1c41e08f0d53a2e07f2a766901f1f4f1a53c51a4",
+  "source_snapshot/src/agentdojo/default_suites/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "source_snapshot/src/agentdojo/default_suites/v1/banking/__init__.py": "06dbcff8dddf069419eb0bc4ff7ffaf45c38fc6d0f5ac978d76da47b03700ac3",
+  "source_snapshot/src/agentdojo/default_suites/v1/banking/injection_tasks.py": "fa2dedf8e66c95ffadb54f5a26648728b08c56f302858de4ee9a5cc0b3891618",
+  "source_snapshot/src/agentdojo/default_suites/v1/banking/task_suite.py": "c58ec73db16f713a16aaec787dac45856e546f4d95be84ab6a4bed9bc12613b6",
+  "source_snapshot/src/agentdojo/default_suites/v1/banking/user_tasks.py": "37af838194f001af80cc040315bcb2d69d0112324d424f9a323473b41b317f82",
+  "source_snapshot/src/agentdojo/default_suites/v1/slack/__init__.py": "711f6ab4ef9cbe2ca5f4ba24cd29ad0d749117572716dcd8ec2d06416ea1def1",
+  "source_snapshot/src/agentdojo/default_suites/v1/slack/injection_tasks.py": "d5775da1689e13192b665837e72cee88ed76f622e9b998e9def18b700fdc5afc",
+  "source_snapshot/src/agentdojo/default_suites/v1/slack/task_suite.py": "bdc6798e8ef83a54e787af80ed44f94e4be8f24aba2eaec2103e3120958c3670",
+  "source_snapshot/src/agentdojo/default_suites/v1/slack/user_tasks.py": "25e43a0c58109765da090aa2f01bfb0892aaee70ca1622028074d7b49443a57b",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/banking_client.py": "0e4273f521db7ff6d5e7f7f552e917b11940102abd932aea8a2998b517441b42",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/calendar_client.py": "5d551339fb87237dd1414a003b26f4f851dbdd2b0826225025e44f16420add22",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py": "19376d95731c46477037986319bc8522b4bc96f4924e730b11906df23fc00b93",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/email_client.py": "782adb70c81ec765919ae835494fac163dbb46f21ef46f6dcf18eab390b5e294",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/file_reader.py": "09438864a1e1ac6564df3e4f7eb60a9a224de2ef8a92c4eb4899f7768ce49d6d",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/slack.py": "c70dbc7b3356e93a1c2bd4e78700859ea58b36adbf8169e51b03f355b0a5fe69",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/travel_booking_client.py": "ad6b3441a38a1ff4bdc7227a15fb9ed764a7906baf2f75902bdb70f2100f69ba",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/types.py": "691ed3353bd04e9f8233c4f70901daefb564e56209a8946f516496520aca3c13",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/user_account.py": "f097c4b2b6cd6784272987d8d37dd7cc5d599620d64b371f7c2af8e65d7ad673",
+  "source_snapshot/src/agentdojo/default_suites/v1/tools/web.py": "246cc534a939ade2864bb62441d8452de7a840d007147c22391ad07bff91594c",
+  "source_snapshot/src/agentdojo/default_suites/v1/travel/__init__.py": "bd0bf8a57c39846c9476adc60be5c870faba09dd497254c2d4520bea21ab3bba",
+  "source_snapshot/src/agentdojo/default_suites/v1/travel/injection_tasks.py": "9252be834b0ae0e28fe06744e052987d71d8ad3666b8d0b1f65f2875f998fca8",
+  "source_snapshot/src/agentdojo/default_suites/v1/travel/task_suite.py": "a2b58f094bd61a79e245ca74c94d9a3d62cc6bc744e5ee21bdadabb43960ba60",
+  "source_snapshot/src/agentdojo/default_suites/v1/travel/user_tasks.py": "757f0e28208f92c2082e016469654524cb1120ec10928ce229da15fe32f6d3ee",
+  "source_snapshot/src/agentdojo/default_suites/v1/workspace/__init__.py": "b50429a079625b039389dce1063d993e38d18213ace046dffa65a735e73d08f9",
+  "source_snapshot/src/agentdojo/default_suites/v1/workspace/injection_tasks.py": "03e0894ffb544a79fd0bfd2c62cc5f90b19a2b1d429068d800239bfd020b6dcc",
+  "source_snapshot/src/agentdojo/default_suites/v1/workspace/task_suite.py": "96fa51ab20f03c30cd2d7bc754b76d717ddbd68bdf39adc85f0e92fc4d2c7ec4",
+  "source_snapshot/src/agentdojo/default_suites/v1/workspace/user_tasks.py": "d2a550b812b7f40ee2dea17ac19d44f2dd063d103524118216b563eca6e44171",
+  "source_snapshot/src/agentdojo/default_suites/v1_1/__init__.py": "6afde4c3d03f2535eaf4b7764f6bc35864fe748c2e89b4673e952c2665813b71",
+  "source_snapshot/src/agentdojo/default_suites/v1_1/travel/user_tasks.py": "de8746e57fa85a5ee3ec9e4e6d66316c7c33e166e51404ffb64709b4458b9ae6",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/__init__.py": "c12b7d8faa09c773e1432f680c55d2272a21609b8a8460844c0d4f313483e022",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/banking/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/banking/user_tasks.py": "d7858d3f9a573fcc334d19d4aa63ba92867cd8d5b99e2d102f7c60840fd42b81",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/slack/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/slack/user_tasks.py": "d63bace385d0f341cb3d20bbb698a3d1530d7eb6e346cc65d04e4b7ea255467d",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/travel/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/travel/injection_tasks.py": "23f325aa0821c7982991657588ee0b58057423559e97d6ebd6febc8274b5ac1b",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/travel/user_tasks.py": "356e46470861de40172a252e92149a2396bca3f66cfcadc0e5a4450fe11c979f",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_1/workspace/user_tasks.py": "76da20246f658609a96d95dc206ae7f58785cab5b1f100f76d367c8e4b6fc7f9",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_2/__init__.py": "2a9e4756075bf0f0db19525d86dec24c98df7ac7a1f5e7fb239a5d438fd6b720",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_2/travel/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_2/travel/injection_tasks.py": "d8688a8896736e4807b649340b84af65eb7b36f34d082073690333445a410b39",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_2/workspace/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_2/workspace/injection_tasks.py": "3ffccf1e54362377a3d02955010b041a572c64aa209bb3e8b70c1fe5fc76fdad",
+  "source_snapshot/src/agentdojo/default_suites/v1_1_2/workspace/user_tasks.py": "ff4e1b65f10346ba167d44b3236f4fe10fbb2066d6e2a22c4edc8b243d0f0a53",
+  "source_snapshot/src/agentdojo/default_suites/v1_2/__init__.py": "cc643d412ba5aea5dfe7896a130af95d05740bcc62ff9df97835ed66786b7498",
+  "source_snapshot/src/agentdojo/default_suites/v1_2/banking/injection_tasks.py": "3e678ad165f911dbc16c8307de761dcc15da274716bec7ac0d05db167ec2c311",
+  "source_snapshot/src/agentdojo/default_suites/v1_2/slack/user_tasks.py": "36c51c6fd744301ed5dd9b654f02aca504af50df827453d1754862ed6201fcc2",
+  "source_snapshot/src/agentdojo/default_suites/v1_2/travel/injection_tasks.py": "15b8ccee487223bfc6afc58cf05591e3a96fb668eee39d7d47ac2fd98f5173c0",
+  "source_snapshot/src/agentdojo/default_suites/v1_2/travel/user_tasks.py": "a563163efea5e723e4fbbafae66fca33e6b743e50f6c25865167dc0663615ef9",
+  "source_snapshot/src/agentdojo/default_suites/v1_2/workspace/injection_tasks.py": "d11a9a4aa86085a1b0e8cea20652dd20f903adedfc6065175a0ead858c29e4a3",
+  "source_snapshot/src/agentdojo/default_suites/v1_2/workspace/user_tasks.py": "6b21b84053d1ac1703674e75d75dd4986e489d3434fcf60e8707b96114ab03bb",
+  "source_snapshot/src/agentdojo/default_suites/v1_2_1/__init__.py": "e092b155d26104e080e15ccb1747fdc0365be0b318475886337e4089d9484739",
+  "source_snapshot/src/agentdojo/default_suites/v1_2_1/workspace/injection_tasks.py": "5a30d439850b58cfb834840bdfe7bbdf4405859bb1899e59ef476f29156078e8",
+  "source_snapshot/src/agentdojo/default_suites/v1_2_2/__init__.py": "12ca1e18055f78ee067cc25e94cce459426ec744b70edd4a335aca4d5df2f157",
+  "source_snapshot/src/agentdojo/default_suites/v1_2_2/banking/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/default_suites/v1_2_2/banking/user_tasks.py": "f3b8417c51b7fe33c0f85571d543a64811f6ef3e4ab9c7ae9568834db66064b2",
+  "source_snapshot/src/agentdojo/default_suites/v1_2_2/workspace/__init__.py": "f79fffc92bb4655f4c3a575a56ec8e19c1c1979618bed8e70e43b49ea58ca689",
+  "source_snapshot/src/agentdojo/default_suites/v1_2_2/workspace/user_tasks.py": "4873a5c1ba3be813cff5f85e6f921f92f7b3a90e21d2d412e043bcfea696de9b",
+  "source_snapshot/src/agentdojo/functions_runtime.py": "3c67f71eb8a7f15d2a15fe9595d84218c5e6868d95fd71d1cef679cd2192d0f7",
+  "source_snapshot/src/agentdojo/logging.py": "74d46f7ff3e3eb45b1fae7a025ca0f0dcc4b2e125533927748728c81ae02ce50",
+  "source_snapshot/src/agentdojo/models.py": "004bbe91e78660418de9426fa79b3c8862e0b02ab20bb480de5c60679122aea5",
+  "source_snapshot/src/agentdojo/scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/src/agentdojo/scripts/benchmark.py": "084c76adf43f70a98e3ec329caa73c86b8838bb899c9bae3066f12373fd1e27f",
+  "source_snapshot/src/agentdojo/scripts/check_suites.py": "7806527357e126d54fa88a2a0ef2eec3f7b6ffefca90f63c179012dc51d91ef6",
+  "source_snapshot/src/agentdojo/strenum.py": "ac76fd07924a27fc42c33e626c77ed93ea48e9f7d4effc1548b8b908b166737f",
+  "source_snapshot/src/agentdojo/task_suite/__init__.py": "6821364aecf7c72451e36fde92974188e221e71b19936659795d9ff771718406",
+  "source_snapshot/src/agentdojo/task_suite/load_suites.py": "e9c97813ed8295f25526733df044e9adf8ba18567eaeec3455591c4fbc1caa12",
+  "source_snapshot/src/agentdojo/task_suite/task_combinators.py": "a225f427c006b2fd814df86c47225ce9193d51857e3f14e69c8a56ee49116df1",
+  "source_snapshot/src/agentdojo/task_suite/task_suite.py": "2e69da06f7e150dd6d238c53a74845b56eebeb224e07f694e1051a6e0c6a2bc1",
+  "source_snapshot/src/agentdojo/types.py": "207b688794d5e214099c00b0dff3a03429f8f3632fcbbdafeac291dc190fbfca",
+  "source_snapshot/src/agentdojo/yaml_loader.py": "73443ec93c140dd2365d1c093f983729dca25075ee39e99047fa6c3d22ad9194",
+  "source_snapshot/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/tests/test_agent_pipeline/test_anthropic_llm.py": "9d3d28fbe64823f4d8382c2f2ef71233501975d118136eacd32795bb78f694ff",
+  "source_snapshot/tests/test_agent_pipeline/test_cohere_llm.py": "abe76dbdc50ee175ae1b6fb616a34eb2212db6d941b03688e0c0ee43650e2f1c",
+  "source_snapshot/tests/test_agent_pipeline/test_google_llm.py": "3addc2d778353b2ebb4bb8cbe475b539ad459ab517c3936209319f0f06502e73",
+  "source_snapshot/tests/test_agent_pipeline/test_pi_detector.py": "adc7e176c264604c099ee9c90aeb6f355fcb43d70cbb742b02a6e1bd1f63dc70",
+  "source_snapshot/tests/test_agent_pipeline/test_prompting_llm.py": "d0d629bafb9c270ec01ce93f5820f4be588e51af5dae114ec95a51c3834ebd99",
+  "source_snapshot/tests/test_ast_utils.py": "43289fe49f4049e4a5304ad926653f87f6686609c31452d8ef40605dd7af95c2",
+  "source_snapshot/tests/test_benchmark.py": "964ba695f4c9b917b745b51b24bbb17eee3a16da84721192eda11aa7204fa69b",
+  "source_snapshot/tests/test_functions_runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_snapshot/tests/test_functions_runtime/test_functions_runtime.py": "9c5e85851263149e904e14111e0cb9a1d87ab0bc958b88d958b4bf3870aff6fa",
+  "source_snapshot/tests/test_workspace_user_tasks.py": "daa6f8c8f19931a3921709b460292882a1f1e8fc7a467094c7816a23e5478f72",
+  "source_snapshot/util_scripts/create_results_table.py": "ab068d131078b77fb9680581cc6f31f565f07ebf36f70e2048070b7ab45087ce",
+  "source_snapshot/util_scripts/run_vllm.sh": "9624df58d748afec79985fa899975909af167b985634960f36f5f4e8bd05c0e2",
+  "source_snapshot/util_scripts/run_vllm_parallel.sh": "9a0df9c7c1440757f2539d7724ce346b5407e9b6e2b17a4efbef5c147b5539fc",
+  "source_snapshot/uv.lock": "395e3d0a59214515008d27c4462c9723ab7594374243f561ad5f19b3aa8a5330",
+  "static_analysis.json": "b8bb2aea76077d010526d62a1709232c4fc6b2c9b447a9691bb90edc9c6eb08f",
+  "tools.jsonl": "86ee82f38c8864ea74493af9da66d8277a0883ab4ddf8b44dc8ea6b6fe14c04f",
+  "trajectory_links.jsonl": "b7f14878de9da92f3f6fd0164245904de3e679b1b4f458a0d9142a25ca925033",
+  "version_matrix.csv": "ab63b3f188e5f7991e70e7c8946391d02020e4083df731272b887081508f71c6"
+ },
+ "file_count_hashed": 196,
+ "hash_exclusions": [
+  "manifest.json (cannot hash itself)",
+  "validation_output.txt (written after the manifest by validate)"
+ ]
+}

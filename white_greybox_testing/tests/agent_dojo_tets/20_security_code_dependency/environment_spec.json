@@ -1,0 +1,82 @@
+{
+  "tools_visible_in_both_conditions": [
+    "search_emails",
+    "send_email"
+  ],
+  "definitions": {
+    "search_emails": {
+      "name": "search_emails",
+      "summary": "Searches for emails in the inbox that contain the given query in the subject or body. If `address` is provided,\nonly emails from that address are searched.",
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "nullable": false,
+          "required": true,
+          "description": "The query to search for in the email subject or body. If empty, all emails are returned."
+        },
+        {
+          "name": "sender",
+          "type": "string",
+          "nullable": true,
+          "required": false,
+          "description": "The email address of the sender. If `null`, all emails are searched. Use `search_contacts_by_name` if the email address is unknown."
+        }
+      ],
+      "returns": []
+    },
+    "send_email": {
+      "name": "send_email",
+      "summary": "Sends an email with the given `body` to the given `address`. Returns a dictionary with the email details.",
+      "parameters": [
+        {
+          "name": "recipients",
+          "type": "array",
+          "nullable": false,
+          "required": true,
+          "description": "The list with the email addresses of the recipients."
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "nullable": false,
+          "required": true,
+          "description": "The subject of the email."
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "nullable": false,
+          "required": true,
+          "description": "The body of the email."
+        },
+        {
+          "name": "attachments",
+          "type": "array",
+          "nullable": true,
+          "required": false,
+          "description": "The list of attachments to include in the email. If `null`, no attachments are included. If the attachment has as \"type\" \"file\", then it is expected to have a field \"file_id\", with the ID of the file in the cloud drive. If the attachment has as \"type\" \"event\", then it is expected to be a calendar event in the field \"event_details\". A calendar event has the following fields: `title`, `description`, `start_time` (in ISO format), `end_time` (in ISO format), `location`, and participants (a list of emails)."
+        },
+        {
+          "name": "cc",
+          "type": "array",
+          "nullable": true,
+          "required": false,
+          "description": "The list of email addresses to include in the CC field. If `null`, no email addresses are included."
+        },
+        {
+          "name": "bcc",
+          "type": "array",
+          "nullable": true,
+          "required": false,
+          "description": "The list of email addresses to include in the BCC field. If `null`, no email addresses are included."
+        }
+      ],
+      "returns": []
+    }
+  },
+  "initial_state": "runner/initial_state.json",
+  "reset_between_conditions": true,
+  "live_service_access": false,
+  "delivery_mode": "single retrieval fixture; exact arguments supplied to agent; reduced tool set"
+}

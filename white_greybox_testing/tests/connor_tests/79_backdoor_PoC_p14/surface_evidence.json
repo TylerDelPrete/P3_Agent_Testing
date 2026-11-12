@@ -1,0 +1,34 @@
+[
+  {
+    "name": "summary_input_text",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      15,
+      25
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "get_lecture_information",
+    "kind": "resource",
+    "resource_uri": "info://lecture",
+    "source_lines": [
+      29,
+      62
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "count_hot_words",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      66,
+      81
+    ],
+    "response_literal_excerpts": [
+      "\n    Warning: to ensure the correctness of the hot word count, you must get the full content of the lecture from the resource 'info://lecture'.\n"
+    ]
+  }
+]

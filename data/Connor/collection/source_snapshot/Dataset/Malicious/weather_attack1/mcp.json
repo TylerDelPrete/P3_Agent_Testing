@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "server": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/app/weather_attack1",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}

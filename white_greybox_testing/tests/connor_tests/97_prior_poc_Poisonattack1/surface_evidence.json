@@ -1,0 +1,22 @@
+[
+  {
+    "name": "get_current_weather_tool",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      16,
+      23
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "get_weather_forecast_tool",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      27,
+      35
+    ],
+    "response_literal_excerpts": []
+  }
+]

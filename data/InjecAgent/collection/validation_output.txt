@@ -1,0 +1,111 @@
+REPO=/workspace/injecagent_sample/repo
+COMMIT=f19c9f2c79a41046eb13c03c51a24c567a8ffa07
+RETRIEVAL_TIME=2026-10-18T10:24:03-06:00
+SNAPSHOT wrote source_snapshot/.gitignore sha256=cf8b5a9cf8de9aee5473f27220bdf88398e97bac8f626e402ee7770a5961e77d
+SNAPSHOT wrote source_snapshot/LICENCE sha256=b48589499dbb84caa796b00b4ea652b0443e49660282c44d890fd473b8c0674e
+SNAPSHOT wrote source_snapshot/README.md sha256=09e81a9e68d5c2a1b491456c83da4ef0126426deb7eafa8588349c2dcce278ea
+SNAPSHOT skip binary figure: asset/overview.pdf
+SNAPSHOT skip binary figure: asset/overview.png
+SNAPSHOT wrote source_snapshot/data/attacker_cases_dh.jsonl sha256=999d52e15af3c80a3303a09430af0f3878d1f91e4c573ca7b477a91cdfa6b991
+SNAPSHOT wrote source_snapshot/data/attacker_cases_ds.jsonl sha256=87952398c989d8ca841724e38ecdbb789676d3841e19dfc44aac7b710df9cb1f
+SNAPSHOT wrote source_snapshot/data/attacker_simulated_responses.json sha256=b1da2e1fb75f266c069b832fef6738c295f01d8962fae15bdac9ff6625e5594e
+SNAPSHOT wrote source_snapshot/data/test_cases_dh_base.json sha256=0a8186468d21389af432e8c7b399ae42264d1b93a07b65c7a489468508604305
+SNAPSHOT wrote source_snapshot/data/test_cases_dh_enhanced.json sha256=885602716b72c18af80695ce6c2e1f242fa03163bc90b0788b0c5e4ab6216d50
+SNAPSHOT wrote source_snapshot/data/test_cases_ds_base.json sha256=4daab35c62a3845e8b9400f4dca58b9c9f37e57cd33b2337552557fbb26282e9
+SNAPSHOT wrote source_snapshot/data/test_cases_ds_enhanced.json sha256=7bc510868df032511053fc40e8470e68a041fb7148d055112093594bf73ab0ce
+SNAPSHOT wrote source_snapshot/data/tools.json sha256=e21a8f70b1d5de4677d6d52642936a322655d79b17a72c84f600550384083a1e
+SNAPSHOT wrote source_snapshot/data/user_cases.jsonl sha256=c840e2b00fdce68e7142d0970220522303d67b2530d6fb36ef1112448cdd8977
+SNAPSHOT wrote source_snapshot/requirements.txt sha256=98d6b860115d877e3aae27228d004401592d9b2a0795ae52b32df97a0d7befbd
+SNAPSHOT wrote source_snapshot/src/evaluate_finetuned_agent.py sha256=3dfd02b5f663ca39b4eb22669ebb0b639a81e38fc7eed63f6a65501a27478cce
+SNAPSHOT wrote source_snapshot/src/evaluate_prompted_agent.py sha256=9a866bdec0c7da0abed9c0288b0f49404e62e77b8b2b623684d743ca87dbe4ae
+SNAPSHOT wrote source_snapshot/src/models.py sha256=5d48592c29ee6d3535d1c5f3d2b9de3eea67690eba2a1e7e71e8ec7357fb7900
+SNAPSHOT wrote source_snapshot/src/output_parsing.py sha256=b841348cdbc5b87c781bed4a592d375d02d51769ac2435cf2e7e69c08a03937b
+SNAPSHOT wrote source_snapshot/src/params.py sha256=9ff2221b2bc8dca98ddb1ae987b2617b30e9b86fa95af9d59629e05e4e0da0f1
+SNAPSHOT wrote source_snapshot/src/prompts/agent_prompts.py sha256=f0249e434c46a9944dab9797edee4cd41e4fc6fceb48b8b8004585a7a4866037
+SNAPSHOT wrote source_snapshot/src/prompts/generation_prompts.py sha256=912d3f77008f3798f832f86df08a4a0fe93ad5be35358f44b379e33a255474f3
+SNAPSHOT wrote source_snapshot/src/prompts/prompt_template.py sha256=370dfcde5cc3bcb6ebaa7825e90fb7ea7902e641f70a5a658a23306ba5058c9e
+SNAPSHOT wrote source_snapshot/src/utils.py sha256=ab21487f92cb14840d69dded17f176ceaa60690469e8cf9b141f87d3f9795d06
+LOADED data/test_cases_dh_base.json: 510 records
+LOADED data/test_cases_dh_enhanced.json: 510 records
+LINKAGE dh: equal_except_Tool_Response=True prefix_insert_matches=510/510
+LOADED data/test_cases_ds_base.json: 544 records
+LOADED data/test_cases_ds_enhanced.json: 544 records
+LINKAGE ds: equal_except_Tool_Response=True prefix_insert_matches=544/544
+PASS JSONL parse (raw=2108, normalized=2108)
+PASS 2108 raw / 2108 normalized / 2108 csv
+PASS counts by setting: 510*2 dh + 544*2 ds
+PASS unique case_ids
+PASS unique source locators
+PASS raw == pinned source (content + key order)
+PASS direct-mapped normalized fields == source
+PASS all source keys accounted for
+PASS supplied_continuation / observed_outcome / original_id are null
+PASS observed_outcome never equals Expected Achievements
+PASS interpretation marked collector-added; related links present
+PASS base/enhanced linkage evidence holds for dh and ds
+PASS every related_case_id exists
+PASS CSV case_ids match normalized order
+PASS source_snapshot hashes match git blobs (22 files)
+PARSE user_tool_parameters: {'ok': 2108}
+PARSE tool_response_template: {'ok': 2108}
+PARSE malicious_tool_response: {'ok': 1020, 'partial: json decoded, literal_eval failed (SyntaxError)': 1020, 'failed (JSONDecodeError: Extra data: line 1 column 279 (char 278))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 126 (char 125))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 120 (char 119))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 155 (char 154))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 148 (char 147))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 191 (char 190))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 229 (char 228))': 2, 'failed (JSONDecodeError: Extra data: line 1 column 82 (char 81))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 151 (char 150))': 2, 'failed (JSONDecodeError: Extra data: line 1 column 97 (char 96))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 103 (char 102))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 127 (char 126))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 138 (char 137))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 156 (char 155))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 150 (char 149))': 2, 'failed (JSONDecodeError: Extra data: line 1 column 119 (char 118))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 61 (char 60))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 274 (char 273))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 121 (char 120))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 115 (char 114))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 143 (char 142))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 186 (char 185))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 224 (char 223))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 77 (char 76))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 146 (char 145))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 92 (char 91))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 98 (char 97))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 122 (char 121))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 133 (char 132))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 145 (char 144))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 114 (char 113))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 56 (char 55))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 375 (char 374))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 222 (char 221))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 216 (char 215))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 251 (char 250))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 244 (char 243))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 287 (char 286))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 325 (char 324))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 178 (char 177))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 247 (char 246))': 2, 'failed (JSONDecodeError: Extra data: line 1 column 193 (char 192))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 199 (char 198))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 223 (char 222))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 234 (char 233))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 252 (char 251))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 246 (char 245))': 2, 'failed (JSONDecodeError: Extra data: line 1 column 215 (char 214))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 157 (char 156))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 370 (char 369))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 217 (char 216))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 211 (char 210))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 239 (char 238))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 282 (char 281))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 320 (char 319))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 173 (char 172))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 242 (char 241))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 188 (char 187))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 194 (char 193))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 218 (char 217))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 241 (char 240))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 210 (char 209))': 1, 'failed (JSONDecodeError: Extra data: line 1 column 152 (char 151))': 1}
+PASS no case dropped for parse failure (all 2108 present)
+PASS no duplicate raw record content across settings
+SHARED base user tasks: 17 distinct, 17 values reused, 1054 cases in a reused group (cross-product structure; not independent workflows)
+SHARED base attacker instructions: 62 distinct, 62 values reused, 1054 cases in a reused group (cross-product structure; not independent workflows)
+SHARED base templates: 17 distinct, 17 values reused, 1054 cases in a reused group (cross-product structure; not independent workflows)
+SHARED enhanced user tasks: 17 distinct, 17 values reused, 1054 cases in a reused group (cross-product structure; not independent workflows)
+SHARED enhanced attacker instructions: 62 distinct, 62 values reused, 1054 cases in a reused group (cross-product structure; not independent workflows)
+SHARED enhanced templates: 17 distinct, 17 values reused, 1054 cases in a reused group (cross-product structure; not independent workflows)
+--- counts by (category, variant, Attack Type)
+  ('data_stealing', 'base', 'Financial Data'): 102
+  ('data_stealing', 'base', 'Others'): 255
+  ('data_stealing', 'base', 'Physical Data'): 187
+  ('data_stealing', 'enhanced', 'Financial Data'): 102
+  ('data_stealing', 'enhanced', 'Others'): 255
+  ('data_stealing', 'enhanced', 'Physical Data'): 187
+  ('direct_harm', 'base', 'Data Security Harm'): 187
+  ('direct_harm', 'base', 'Financial Harm'): 153
+  ('direct_harm', 'base', 'Physical Harm'): 170
+  ('direct_harm', 'enhanced', 'Data Security Harm'): 187
+  ('direct_harm', 'enhanced', 'Financial Harm'): 153
+  ('direct_harm', 'enhanced', 'Physical Harm'): 170
+--- unique user tools / attacker instructions (base only; enhanced mirrors)
+  direct_harm: tools=17 instructions=30 tasks=17
+    AmazonGetProductDetails: 30
+    EvernoteManagerSearchNotes: 30
+    GitHubGetRepositoryDetails: 30
+    GitHubGetUserDetails: 30
+    GitHubSearchRepositories: 30
+    GmailReadEmail: 30
+    GmailSearchEmails: 30
+    GoogleCalendarGetEventsFromSharedCalendar: 30
+    GoogleCalendarReadEvents: 30
+    ShopifyGetProductDetails: 30
+    TeladocViewReviews: 30
+    TodoistSearchTasks: 30
+    TwilioGetReceivedSmsMessages: 30
+    TwitterManagerGetUserProfile: 30
+    TwitterManagerReadTweet: 30
+    TwitterManagerSearchTweets: 30
+    WebBrowserNavigateTo: 30
+  data_stealing: tools=17 instructions=32 tasks=17
+    AmazonGetProductDetails: 32
+    EvernoteManagerSearchNotes: 32
+    GitHubGetRepositoryDetails: 32
+    GitHubGetUserDetails: 32
+    GitHubSearchRepositories: 32
+    GmailReadEmail: 32
+    GmailSearchEmails: 32
+    GoogleCalendarGetEventsFromSharedCalendar: 32
+    GoogleCalendarReadEvents: 32
+    ShopifyGetProductDetails: 32
+    TeladocViewReviews: 32
+    TodoistSearchTasks: 32
+    TwilioGetReceivedSmsMessages: 32
+    TwitterManagerGetUserProfile: 32
+    TwitterManagerReadTweet: 32
+    TwitterManagerSearchTweets: 32
+    WebBrowserNavigateTo: 32
+
+ALL CHECKS PASSED

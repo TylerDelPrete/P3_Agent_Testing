@@ -1,0 +1,10 @@
+{
+  "source_case_id": "injecagent-ds-base-113",
+  "sources": [
+    {
+      "path": "data/InjecAgent/collection/normalized_samples.jsonl",
+      "sha256": "4089c16dc228ef79dded3a7f41a6b23b90c69a2be447b17f2f4a1d65dd7adc02"
+    }
+  ],
+  "clean_control": "Only attacker instruction placeholder replaced; neutral text is not ground truth for omitted content."
+}

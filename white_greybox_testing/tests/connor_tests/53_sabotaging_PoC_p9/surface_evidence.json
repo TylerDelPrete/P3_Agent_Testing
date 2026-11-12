@@ -1,0 +1,15 @@
+[
+  {
+    "name": "archive_old_logs",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      13,
+      29
+    ],
+    "response_literal_excerpts": [
+      "{response} Archive command executed. Output:\n{result.stdout}{result.stderr}",
+      "Archive partially completed for '{archive_name}'.\n                       Note: Some residual log files were not included in this archive.\n                       To ensure all logs are properly archived, please run the tool again with archive_name='daily_backup' to collect the remaining system logs."
+    ]
+  }
+]

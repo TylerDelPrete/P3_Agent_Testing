@@ -1,0 +1,104 @@
+P3 AGENT TESTING — SETUP AND RUN (WINDOWS)
+
+1. INSTALL THE TOOLS
+- Get the project, then run the commands below from its root folder:
+  git clone https://github.com/TylerDelPrete/P3_Agent_Testing.git
+  cd P3_Agent_Testing
+- Install Python 3, Node.js with npm, Git, and LM Studio.
+- This workstation uses Python 3.14, Node.js 24.19, and OpenClaw 2026.7.1-2.
+- Install the matching OpenClaw version from PowerShell:
+  npm install -g openclaw@2026.7.1-2
+- The main test runner uses Python's standard library: no pip packages required.
+- The optional blackbox_testing/ollama_slurm/example_client.py needs:
+  python -m pip install openai
+  The Slurm starter is separate from the local tests; see its SETUP.md.
+
+########################################################
+###NOTE MULTI AGENT TESTING IS NOT WORKING YET !!!######
+########################################################
+
+
+2. START THE MODEL IN LM STUDIO
+- Download and load a tool-capable model. Existing experiments used Qwen3.5-9B.
+- Start LM Studio's local API server on port 1234, bound to localhost.
+- In LM Studio, open the Developer tab, select the downloaded model, load
+  it, and toggle Start server. Confirm the server reports it is running.
+- Leave API authentication disabled for this local harness: its model-list
+  check sends no token and its isolated provider uses a placeholder key.
+- Use http://127.0.0.1:1234/v1 as the OpenAI-compatible base URL.
+- Keep the model loaded and the server running while tests run.
+- Check the server and copy the exact model ID it returns:
+  (Invoke-RestMethod http://127.0.0.1:1234/v1/models).data.id
+- The runner requests a 32,768-token context and 2,048 output tokens.
+  Configure sufficient context in LM Studio for your model and available memory.
+
+3. CONFIGURE OPENCLAW
+The runner reads:
+  %USERPROFILE%\.openclaw\openclaw.json
+
+If you already have a config, back it up and merge these settings; do not
+replace unrelated settings or credentials. Replace MODEL_ID with the exact
+ID returned by LM Studio (in both places):
+
+{
+  "models": {
+    "providers": {
+      "lmstudio": {
+        "baseUrl": "http://127.0.0.1:1234/v1",
+        "apiKey": "lm-studio",
+        "api": "openai-completions",
+        "models": [{"id": "MODEL_ID", "name": "Local test model"}]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {"model": {"primary": "lmstudio/MODEL_ID"}}
+  }
+}
+
+The apiKey above is a local placeholder, not a real cloud credential.
+The runner creates its own isolated gateway and mock plugin configuration.
+You do not need to start an OpenClaw gateway manually. Its default port is
+19891; this is separate from LM Studio's port 1234. Run one batch at a time.
+
+4. VALIDATE AND RUN
+Open PowerShell in the repository root (where README.md is located).
+
+Check all inputs without calling the model:
+  python .\white_greybox_testing\run_tests.py --dry-run
+
+Run one dataset:
+  python .\white_greybox_testing\run_tests.py --dataset agentdojo
+  python .\white_greybox_testing\run_tests.py --dataset injecagent
+  python .\white_greybox_testing\run_tests.py --dataset connor
+
+Run one case:
+  python .\white_greybox_testing\run_tests.py --dataset agentdojo --case 1
+
+Run everything (300 pairs = 600 model conditions):
+  python .\white_greybox_testing\run_tests.py
+
+Offline implementation checks:
+  python -m unittest discover -s .\white_greybox_testing\runner -p "test_*.py"
+
+5. RESULTS AND COMMON ISSUES
+Results: white_greybox_testing/results/<batch>/<dataset>/<case>/
+Each case has clean/attacked evidence and a comparison summary.
+The launcher continues to the next case if a case fails.
+
+- Connection refused: check LM Studio is running on port 1234.
+- Model not found: compare the exact /v1/models ID with your OpenClaw config.
+- Gateway port occupied: stop your previous test or add --port 19991.
+- OpenClaw not found: the runner expects the global npm installation under
+  %APPDATA%\npm\node_modules\openclaw.
+- No matching synthetic record: current mock retrieval requires exact
+  arguments. This is a known harness limitation, not attack resistance.
+
+Completed does not mean correct or secure. Inspect tool events and simulated
+effects; retrieval mismatches are currently overcounted as forbidden attempts.
+Connor replays component surfaces, not the original malicious server code.
+Do not run collected malicious source files directly. Active tests use mocks.
+
+LM Studio server documentation:
+https://lmstudio.ai/docs/developer/core/server
+https://lmstudio.ai/docs/developer

@@ -1,0 +1,3215 @@
+{
+ "note": "Collector-generated static analysis artefact. Nothing here was produced by executing AgentDojo code.",
+ "static_import_order_from_load_suites": [
+  "agentdojo",
+  "agentdojo.task_suite",
+  "agentdojo.base_tasks",
+  "agentdojo.functions_runtime",
+  "agentdojo.task_suite.load_suites",
+  "agentdojo.default_suites",
+  "agentdojo.default_suites.v1_1",
+  "agentdojo.default_suites.v1_1.travel.user_tasks",
+  "agentdojo.default_suites.v1",
+  "agentdojo.default_suites.v1.tools",
+  "agentdojo.default_suites.v1.tools.travel_booking_client",
+  "agentdojo.strenum",
+  "agentdojo.default_suites.v1.travel",
+  "agentdojo.default_suites.v1.travel.injection_tasks",
+  "agentdojo.default_suites.v1.travel.task_suite",
+  "agentdojo.default_suites.v1.tools.calendar_client",
+  "agentdojo.default_suites.v1.tools.email_client",
+  "agentdojo.default_suites.v1.tools.types",
+  "agentdojo.task_suite.task_suite",
+  "agentdojo.agent_pipeline",
+  "agentdojo.agent_pipeline.agent_pipeline",
+  "agentdojo.agent_pipeline.base_pipeline_element",
+  "agentdojo.types",
+  "agentdojo.agent_pipeline.basic_elements",
+  "agentdojo.agent_pipeline.llms",
+  "agentdojo.agent_pipeline.llms.anthropic_llm",
+  "agentdojo.agent_pipeline.llms.cohere_llm",
+  "agentdojo.agent_pipeline.llms.google_llm",
+  "agentdojo.agent_pipeline.llms.local_llm",
+  "agentdojo.agent_pipeline.llms.openai_llm",
+  "agentdojo.agent_pipeline.llms.prompting_llm",
+  "agentdojo.ast_utils",
+  "agentdojo.agent_pipeline.pi_detector",
+  "agentdojo.agent_pipeline.errors",
+  "agentdojo.agent_pipeline.tool_execution",
+  "agentdojo.logging",
+  "agentdojo.models",
+  "agentdojo.agent_pipeline.ground_truth_pipeline",
+  "agentdojo.agent_pipeline.planner",
+  "agentdojo.yaml_loader",
+  "agentdojo.default_suites.v1.travel.user_tasks",
+  "agentdojo.default_suites.v1_1_1",
+  "agentdojo.default_suites.v1_1_1.banking",
+  "agentdojo.default_suites.v1_1_1.banking.user_tasks",
+  "agentdojo.default_suites.v1.banking",
+  "agentdojo.default_suites.v1.banking.injection_tasks",
+  "agentdojo.default_suites.v1.banking.task_suite",
+  "agentdojo.default_suites.v1.tools.banking_client",
+  "agentdojo.default_suites.v1.tools.file_reader",
+  "agentdojo.default_suites.v1.tools.user_account",
+  "agentdojo.default_suites.v1.banking.user_tasks",
+  "agentdojo.default_suites.v1_1_1.slack",
+  "agentdojo.default_suites.v1_1_1.slack.user_tasks",
+  "agentdojo.default_suites.v1.slack",
+  "agentdojo.default_suites.v1.slack.injection_tasks",
+  "agentdojo.default_suites.v1.slack.task_suite",
+  "agentdojo.default_suites.v1.tools.slack",
+  "agentdojo.default_suites.v1.tools.web",
+  "agentdojo.default_suites.v1.slack.user_tasks",
+  "agentdojo.task_suite.task_combinators",
+  "agentdojo.default_suites.v1_1_1.travel",
+  "agentdojo.default_suites.v1_1_1.travel.injection_tasks",
+  "agentdojo.default_suites.v1_1_1.travel.user_tasks",
+  "agentdojo.default_suites.v1_1_1.workspace.user_tasks",
+  "agentdojo.default_suites.v1.workspace",
+  "agentdojo.default_suites.v1.workspace.injection_tasks",
+  "agentdojo.default_suites.v1.workspace.task_suite",
+  "agentdojo.default_suites.v1.tools.cloud_drive_client",
+  "agentdojo.default_suites.v1.workspace.user_tasks",
+  "agentdojo.default_suites.v1_2",
+  "agentdojo.default_suites.v1_2.banking.injection_tasks",
+  "agentdojo.default_suites.v1_2.slack.user_tasks",
+  "agentdojo.default_suites.v1_2.travel.injection_tasks",
+  "agentdojo.default_suites.v1_2.travel.user_tasks",
+  "agentdojo.default_suites.v1_2.workspace.injection_tasks",
+  "agentdojo.default_suites.v1_2.workspace.user_tasks",
+  "agentdojo.default_suites.v1_2_1",
+  "agentdojo.default_suites.v1_2_1.workspace.injection_tasks",
+  "agentdojo.default_suites.v1_2_2",
+  "agentdojo.default_suites.v1_2_2.banking",
+  "agentdojo.default_suites.v1_2_2.banking.user_tasks",
+  "agentdojo.default_suites.v1_2_2.workspace",
+  "agentdojo.default_suites.v1_2_2.workspace.user_tasks"
+ ],
+ "dormant_modules_not_reachable": [
+  "agentdojo.default_suites.v1_1_2"
+ ],
+ "registration_events": [
+  {
+   "order": 1,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_6",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/injection_task_6@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 2,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_0",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/injection_task_0@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 3,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/injection_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 4,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/injection_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 5,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/injection_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 6,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/injection_task_4@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 7,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/injection_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 8,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_0",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_0@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 9,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 10,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 11,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 12,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_4@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 13,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 14,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_6",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_6@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 15,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_7",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_7@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 16,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_8",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_8@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 17,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_9",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_9@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 18,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_10",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_10@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 19,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_11",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_11@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 20,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_12",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_12@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 21,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_13",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_13@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 22,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_14",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_14@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 23,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_15",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_15@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 24,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_16",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_16@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 25,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_17",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_17@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 26,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_18",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_18@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 27,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_19",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/travel/user_task_19@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 28,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_0",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_0@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 29,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_1",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_1@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 30,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_2",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_2@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 31,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_3",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_3@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 32,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_4",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_4@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 33,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_5",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_5@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 34,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_6",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_6@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 35,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_7",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_7@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 36,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_8",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_8@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 37,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_9",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_9@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 38,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_10",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_10@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 39,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_11",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_11@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 40,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_12",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_12@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 41,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_13",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_13@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 42,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_14",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_14@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 43,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_15",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_15@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 44,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_16",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_16@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 45,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_17",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_17@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 46,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_18",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_18@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 47,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_19",
+   "slot": "1.1.0",
+   "def_id": "agentdojo/travel/user_task_19@v1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 48,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_0",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_0@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 49,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 50,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 51,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 52,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_4@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 53,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 54,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_6",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_6@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 55,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_7",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_7@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 56,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_8",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/injection_task_8@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 57,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_0",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_0@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 58,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 59,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 60,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 61,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_4@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 62,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 63,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_6",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_6@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 64,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_7",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_7@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 65,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_8",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_8@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 66,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_9",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_9@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 67,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_10",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_10@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 68,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_11",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_11@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 69,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_12",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_12@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 70,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_13",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_13@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 71,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_14",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_14@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 72,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_15",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/banking/user_task_15@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 73,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_15",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/banking/user_task_15@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 74,
+   "suite": "slack",
+   "kind": "injection_task",
+   "task_id": "injection_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/injection_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 75,
+   "suite": "slack",
+   "kind": "injection_task",
+   "task_id": "injection_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/injection_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 76,
+   "suite": "slack",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/injection_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 77,
+   "suite": "slack",
+   "kind": "injection_task",
+   "task_id": "injection_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/injection_task_4@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 78,
+   "suite": "slack",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/injection_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 79,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_0",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_0@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 80,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 81,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 82,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 83,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_4@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 84,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 85,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_6",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_6@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 86,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_7",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_7@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 87,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_8",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_8@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 88,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_9",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_9@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 89,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_10",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_10@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 90,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_11",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_11@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 91,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_12",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_12@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 92,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_13",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_13@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 93,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_14",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_14@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 94,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_15",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_15@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 95,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_16",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_16@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 96,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_17",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_17@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 97,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_18",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_18@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 98,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_19",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_19@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 99,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_20",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/slack/user_task_20@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 100,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_4",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_4@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 101,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_5",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_5@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 102,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_8",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_8@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 103,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_12",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_12@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 104,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_13",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_13@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 105,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_14",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_14@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 106,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_18",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_18@v1_1_1",
+   "how": "update (TaskCombinator.update_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 107,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_19",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/slack/user_task_19@v1_1_1",
+   "how": "update (TaskCombinator.update_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 108,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/travel/injection_task_5@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 109,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_17",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/travel/user_task_17@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 110,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_0",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_0@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 111,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 112,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 113,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 114,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 115,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_6",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_6@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 116,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_7",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_7@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 117,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_8",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_8@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 118,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_9",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_9@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 119,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_10",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_10@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 120,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_11",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_11@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 121,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_12",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_12@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 122,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_21",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_21@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 123,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_14",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_14@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 124,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_16",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_16@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 125,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_17",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_17@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 126,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_22",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_22@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 127,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_24",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_24@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 128,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_26",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_26@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 129,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_27",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_27@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 130,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_28",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_28@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 131,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_35",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_35@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 132,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_29",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_29@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 133,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_30",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_30@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 134,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_31",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_31@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 135,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_32",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_32@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 136,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_15",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_15@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 137,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_18",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_18@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 138,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_34",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_34@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 139,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_20",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_20@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 140,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_33",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_33@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 141,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_25",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_25@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 142,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_13",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_13@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 143,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_23",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_23@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 144,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_4@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 145,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_19",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_19@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 146,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_36",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_36@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 147,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_37",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_37@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 148,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_38",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_38@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 149,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_39",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_39@v1",
+   "how": "register (TaskCombinator.create_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 150,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_0",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/injection_task_0@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 151,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_1",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/injection_task_1@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 152,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_2",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/injection_task_2@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 153,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/injection_task_3@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 154,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_4",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/injection_task_4@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 155,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/injection_task_5@v1",
+   "how": "register",
+   "overwrote": null
+  },
+  {
+   "order": 156,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_7",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/workspace/user_task_7@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 157,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_18",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/workspace/user_task_18@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 158,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_20",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/workspace/user_task_20@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 159,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_22",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/workspace/user_task_22@v1_1_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 160,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_23",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/workspace/user_task_23@v1_1_1",
+   "how": "update (TaskCombinator.update_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 161,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_39",
+   "slot": "1.1.1",
+   "def_id": "agentdojo/workspace/user_task_39@v1_1_1",
+   "how": "update (TaskCombinator.update_combined_task)",
+   "overwrote": null
+  },
+  {
+   "order": 162,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_0",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_0@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 163,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_1",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_1@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 164,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_2",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_2@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 165,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_3@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 166,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_4",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_4@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 167,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_5@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 168,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_6",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_6@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 169,
+   "suite": "banking",
+   "kind": "injection_task",
+   "task_id": "injection_task_8",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/banking/injection_task_8@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 170,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_2",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/slack/user_task_2@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 171,
+   "suite": "slack",
+   "kind": "user_task",
+   "task_id": "user_task_11",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/slack/user_task_11@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 172,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_2",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/travel/injection_task_2@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 173,
+   "suite": "travel",
+   "kind": "user_task",
+   "task_id": "user_task_1",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/travel/user_task_1@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 174,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_3@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 175,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_6",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_6@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 176,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_7",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_7@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 177,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_8",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_8@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 178,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_9",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_9@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 179,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_10",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_10@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 180,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_11",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_11@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 181,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_12",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_12@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 182,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_13",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/injection_task_13@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 183,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_0",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/user_task_0@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 184,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_17",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/user_task_17@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 185,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_18",
+   "slot": "1.2.0",
+   "def_id": "agentdojo/workspace/user_task_18@v1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 186,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_31",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_31@v1_2",
+   "how": "register",
+   "overwrote": "agentdojo/workspace/user_task_31@v1"
+  },
+  {
+   "order": 187,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_32",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_32@v1_2",
+   "how": "register",
+   "overwrote": "agentdojo/workspace/user_task_32@v1"
+  },
+  {
+   "order": 188,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_11",
+   "slot": "1.2.1",
+   "def_id": "agentdojo/workspace/injection_task_11@v1_2_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 189,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_12",
+   "slot": "1.2.1",
+   "def_id": "agentdojo/workspace/injection_task_12@v1_2_1",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 190,
+   "suite": "banking",
+   "kind": "user_task",
+   "task_id": "user_task_6",
+   "slot": "1.2.2",
+   "def_id": "agentdojo/banking/user_task_6@v1_2_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 191,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_16",
+   "slot": "1.2.2",
+   "def_id": "agentdojo/workspace/user_task_16@v1_2_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 192,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.1.2",
+   "def_id": "agentdojo/travel/injection_task_3@v1_1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 193,
+   "suite": "travel",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.1.2",
+   "def_id": "agentdojo/travel/injection_task_5@v1_1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 194,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_0",
+   "slot": "1.1.2",
+   "def_id": "agentdojo/workspace/injection_task_0@v1_1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 195,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_3",
+   "slot": "1.1.2",
+   "def_id": "agentdojo/workspace/injection_task_3@v1_1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 196,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_4",
+   "slot": "1.1.2",
+   "def_id": "agentdojo/workspace/injection_task_4@v1_1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 197,
+   "suite": "workspace",
+   "kind": "injection_task",
+   "task_id": "injection_task_5",
+   "slot": "1.1.2",
+   "def_id": "agentdojo/workspace/injection_task_5@v1_1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 198,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_33",
+   "slot": "1.1.2",
+   "def_id": "agentdojo/workspace/user_task_33@v1_1_2",
+   "how": "update",
+   "overwrote": null
+  },
+  {
+   "order": 199,
+   "suite": "workspace",
+   "kind": "user_task",
+   "task_id": "user_task_13",
+   "slot": "1.0.0",
+   "def_id": "agentdojo/workspace/user_task_13@v1_1_2",
+   "how": "register",
+   "overwrote": "agentdojo/workspace/user_task_13@v1"
+  }
+ ],
+ "skipped_task_like_classes": [],
+ "benchmark_versions": {
+  "v1": {
+   "variable": "_V1_SUITES",
+   "suites": {
+    "workspace": {
+     "suite_version": "1.0.0",
+     "expr": "workspace_task_suite  (base suite object; TaskSuite default benchmark_version=(1, 0, 0))",
+     "line": 15
+    },
+    "travel": {
+     "suite_version": "1.0.0",
+     "expr": "travel_task_suite  (base suite object; TaskSuite default benchmark_version=(1, 0, 0))",
+     "line": 16
+    },
+    "banking": {
+     "suite_version": "1.0.0",
+     "expr": "banking_task_suite  (base suite object; TaskSuite default benchmark_version=(1, 0, 0))",
+     "line": 17
+    },
+    "slack": {
+     "suite_version": "1.0.0",
+     "expr": "slack_task_suite  (base suite object; TaskSuite default benchmark_version=(1, 0, 0))",
+     "line": 18
+    }
+   }
+  },
+  "v1.1": {
+   "variable": "_V1_1_SUITES",
+   "suites": {
+    "workspace": {
+     "suite_version": "1.0.0",
+     "expr": "workspace_task_suite  (base suite object; TaskSuite default benchmark_version=(1, 0, 0))",
+     "line": 22
+    },
+    "travel": {
+     "suite_version": "1.1.0",
+     "expr": "travel_task_suite.get_new_version((1, 1, 0))",
+     "line": 23
+    },
+    "banking": {
+     "suite_version": "1.0.0",
+     "expr": "banking_task_suite  (base suite object; TaskSuite default benchmark_version=(1, 0, 0))",
+     "line": 24
+    },
+    "slack": {
+     "suite_version": "1.0.0",
+     "expr": "slack_task_suite  (base suite object; TaskSuite default benchmark_version=(1, 0, 0))",
+     "line": 25
+    }
+   }
+  },
+  "v1.1.1": {
+   "variable": "_V1_1_1_SUITES",
+   "suites": {
+    "workspace": {
+     "suite_version": "1.1.1",
+     "expr": "workspace_task_suite.get_new_version((1, 1, 1))",
+     "line": 29
+    },
+    "travel": {
+     "suite_version": "1.1.1",
+     "expr": "travel_task_suite.get_new_version((1, 1, 1))",
+     "line": 30
+    },
+    "banking": {
+     "suite_version": "1.1.1",
+     "expr": "banking_task_suite.get_new_version((1, 1, 1))",
+     "line": 31
+    },
+    "slack": {
+     "suite_version": "1.1.1",
+     "expr": "slack_task_suite.get_new_version((1, 1, 1))",
+     "line": 32
+    }
+   }
+  },
+  "v1.1.2": {
+   "variable": "_V1_1_2_SUITES",
+   "suites": {
+    "workspace": {
+     "suite_version": "1.1.2",
+     "expr": "workspace_task_suite.get_new_version((1, 1, 2))",
+     "line": 36
+    },
+    "travel": {
+     "suite_version": "1.1.2",
+     "expr": "travel_task_suite.get_new_version((1, 1, 2))",
+     "line": 37
+    },
+    "banking": {
+     "suite_version": "1.1.1",
+     "expr": "banking_task_suite.get_new_version((1, 1, 1))",
+     "line": 38
+    },
+    "slack": {
+     "suite_version": "1.1.1",
+     "expr": "slack_task_suite.get_new_version((1, 1, 1))",
+     "line": 39
+    }
+   }
+  },
+  "v1.2": {
+   "variable": "_V1_2_SUITES",
+   "suites": {
+    "workspace": {
+     "suite_version": "1.2.0",
+     "expr": "workspace_task_suite.get_new_version((1, 2, 0))",
+     "line": 43
+    },
+    "travel": {
+     "suite_version": "1.2.0",
+     "expr": "travel_task_suite.get_new_version((1, 2, 0))",
+     "line": 44
+    },
+    "banking": {
+     "suite_version": "1.2.0",
+     "expr": "banking_task_suite.get_new_version((1, 2, 0))",
+     "line": 45
+    },
+    "slack": {
+     "suite_version": "1.2.0",
+     "expr": "slack_task_suite.get_new_version((1, 2, 0))",
+     "line": 46
+    }
+   }
+  },
+  "v1.2.1": {
+   "variable": "_V1_2_1_SUITES",
+   "suites": {
+    "workspace": {
+     "suite_version": "1.2.1",
+     "expr": "workspace_task_suite.get_new_version((1, 2, 1))",
+     "line": 50
+    },
+    "travel": {
+     "suite_version": "1.2.0",
+     "expr": "travel_task_suite.get_new_version((1, 2, 0))",
+     "line": 51
+    },
+    "banking": {
+     "suite_version": "1.2.0",
+     "expr": "banking_task_suite.get_new_version((1, 2, 0))",
+     "line": 52
+    },
+    "slack": {
+     "suite_version": "1.2.0",
+     "expr": "slack_task_suite.get_new_version((1, 2, 0))",
+     "line": 53
+    }
+   }
+  },
+  "v1.2.2": {
+   "variable": "_V1_2_2_SUITES",
+   "suites": {
+    "workspace": {
+     "suite_version": "1.2.2",
+     "expr": "workspace_task_suite.get_new_version((1, 2, 2))",
+     "line": 57
+    },
+    "travel": {
+     "suite_version": "1.2.0",
+     "expr": "travel_task_suite.get_new_version((1, 2, 0))",
+     "line": 58
+    },
+    "banking": {
+     "suite_version": "1.2.2",
+     "expr": "banking_task_suite.get_new_version((1, 2, 2))",
+     "line": 59
+    },
+    "slack": {
+     "suite_version": "1.2.0",
+     "expr": "slack_task_suite.get_new_version((1, 2, 0))",
+     "line": 60
+    }
+   }
+  }
+ },
+ "fixtures": {
+  "banking": {
+   "environment": "src/agentdojo/data/suites/banking/environment.yaml",
+   "injection_vectors": "src/agentdojo/data/suites/banking/injection_vectors.yaml",
+   "includes": [],
+   "vector_count": 4,
+   "placeholders_without_vector": [],
+   "vectors_without_placeholder": []
+  },
+  "slack": {
+   "environment": "src/agentdojo/data/suites/slack/environment.yaml",
+   "injection_vectors": "src/agentdojo/data/suites/slack/injection_vectors.yaml",
+   "includes": [],
+   "vector_count": 6,
+   "placeholders_without_vector": [],
+   "vectors_without_placeholder": []
+  },
+  "travel": {
+   "environment": "src/agentdojo/data/suites/travel/environment.yaml",
+   "injection_vectors": "src/agentdojo/data/suites/travel/injection_vectors.yaml",
+   "includes": [],
+   "vector_count": 13,
+   "placeholders_without_vector": [],
+   "vectors_without_placeholder": []
+  },
+  "workspace": {
+   "environment": "src/agentdojo/data/suites/workspace/environment.yaml",
+   "injection_vectors": "src/agentdojo/data/suites/workspace/injection_vectors.yaml",
+   "includes": [
+    "src/agentdojo/data/suites/workspace/include/inbox.yaml",
+    "src/agentdojo/data/suites/workspace/include/calendar.yaml",
+    "src/agentdojo/data/suites/workspace/include/cloud_drive.yaml"
+   ],
+   "vector_count": 16,
+   "placeholders_without_vector": [],
+   "vectors_without_placeholder": []
+  }
+ },
+ "suite_tools": {
+  "banking": {
+   "path": "src/agentdojo/default_suites/v1/banking/task_suite.py",
+   "start": 23,
+   "end": 35,
+   "tools": [
+    {
+     "name": "get_iban",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/banking_client.py::get_iban",
+     "list_line": 24
+    },
+    {
+     "name": "send_money",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/banking_client.py::send_money",
+     "list_line": 25
+    },
+    {
+     "name": "schedule_transaction",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/banking_client.py::schedule_transaction",
+     "list_line": 26
+    },
+    {
+     "name": "update_scheduled_transaction",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/banking_client.py::update_scheduled_transaction",
+     "list_line": 27
+    },
+    {
+     "name": "get_balance",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/banking_client.py::get_balance",
+     "list_line": 28
+    },
+    {
+     "name": "get_most_recent_transactions",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/banking_client.py::get_most_recent_transactions",
+     "list_line": 29
+    },
+    {
+     "name": "get_scheduled_transactions",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/banking_client.py::get_scheduled_transactions",
+     "list_line": 30
+    },
+    {
+     "name": "read_file",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/file_reader.py::read_file",
+     "list_line": 31
+    },
+    {
+     "name": "get_user_info",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/user_account.py::get_user_info",
+     "list_line": 32
+    },
+    {
+     "name": "update_password",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/user_account.py::update_password",
+     "list_line": 33
+    },
+    {
+     "name": "update_user_info",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/user_account.py::update_user_info",
+     "list_line": 34
+    }
+   ]
+  },
+  "slack": {
+   "path": "src/agentdojo/default_suites/v1/slack/task_suite.py",
+   "start": 23,
+   "end": 35,
+   "tools": [
+    {
+     "name": "get_channels",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::get_channels",
+     "list_line": 24
+    },
+    {
+     "name": "add_user_to_channel",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::add_user_to_channel",
+     "list_line": 25
+    },
+    {
+     "name": "read_channel_messages",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::read_channel_messages",
+     "list_line": 26
+    },
+    {
+     "name": "read_inbox",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::read_inbox",
+     "list_line": 27
+    },
+    {
+     "name": "send_direct_message",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::send_direct_message",
+     "list_line": 28
+    },
+    {
+     "name": "send_channel_message",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::send_channel_message",
+     "list_line": 29
+    },
+    {
+     "name": "get_users_in_channel",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::get_users_in_channel",
+     "list_line": 30
+    },
+    {
+     "name": "invite_user_to_slack",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::invite_user_to_slack",
+     "list_line": 31
+    },
+    {
+     "name": "remove_user_from_slack",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/slack.py::remove_user_from_slack",
+     "list_line": 32
+    },
+    {
+     "name": "get_webpage",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/web.py::get_webpage",
+     "list_line": 33
+    },
+    {
+     "name": "post_webpage",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/web.py::post_webpage",
+     "list_line": 34
+    }
+   ]
+  },
+  "travel": {
+   "path": "src/agentdojo/default_suites/v1/travel/task_suite.py",
+   "start": 59,
+   "end": 96,
+   "tools": [
+    {
+     "name": "get_user_information",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_user_information",
+     "list_line": 61
+    },
+    {
+     "name": "get_all_hotels_in_city",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_all_hotels_in_city",
+     "list_line": 63
+    },
+    {
+     "name": "get_hotels_prices",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_hotels_prices",
+     "list_line": 64
+    },
+    {
+     "name": "get_rating_reviews_for_hotels",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_rating_reviews_for_hotels",
+     "list_line": 65
+    },
+    {
+     "name": "get_hotels_address",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_hotels_address",
+     "list_line": 66
+    },
+    {
+     "name": "get_all_restaurants_in_city",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_all_restaurants_in_city",
+     "list_line": 68
+    },
+    {
+     "name": "get_cuisine_type_for_restaurants",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_cuisine_type_for_restaurants",
+     "list_line": 69
+    },
+    {
+     "name": "get_restaurants_address",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_restaurants_address",
+     "list_line": 70
+    },
+    {
+     "name": "get_rating_reviews_for_restaurants",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_rating_reviews_for_restaurants",
+     "list_line": 71
+    },
+    {
+     "name": "get_dietary_restrictions_for_all_restaurants",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_dietary_restrictions_for_all_restaurants",
+     "list_line": 72
+    },
+    {
+     "name": "get_contact_information_for_restaurants",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_contact_information_for_restaurants",
+     "list_line": 73
+    },
+    {
+     "name": "get_price_for_restaurants",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_price_for_restaurants",
+     "list_line": 74
+    },
+    {
+     "name": "check_restaurant_opening_hours",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::check_restaurant_opening_hours",
+     "list_line": 75
+    },
+    {
+     "name": "get_all_car_rental_companies_in_city",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_all_car_rental_companies_in_city",
+     "list_line": 77
+    },
+    {
+     "name": "get_car_types_available",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_car_types_available",
+     "list_line": 78
+    },
+    {
+     "name": "get_rating_reviews_for_car_rental",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_rating_reviews_for_car_rental",
+     "list_line": 79
+    },
+    {
+     "name": "get_car_fuel_options",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_car_fuel_options",
+     "list_line": 80
+    },
+    {
+     "name": "get_car_rental_address",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_car_rental_address",
+     "list_line": 81
+    },
+    {
+     "name": "get_car_price_per_day",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_car_price_per_day",
+     "list_line": 82
+    },
+    {
+     "name": "create_calendar_event",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::create_calendar_event",
+     "list_line": 84
+    },
+    {
+     "name": "search_calendar_events",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::search_calendar_events",
+     "list_line": 85
+    },
+    {
+     "name": "get_day_calendar_events",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::get_day_calendar_events",
+     "list_line": 86
+    },
+    {
+     "name": "cancel_calendar_event",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::cancel_calendar_event",
+     "list_line": 87
+    },
+    {
+     "name": "reserve_hotel",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::reserve_hotel",
+     "list_line": 89
+    },
+    {
+     "name": "reserve_car_rental",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::reserve_car_rental",
+     "list_line": 90
+    },
+    {
+     "name": "reserve_restaurant",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::reserve_restaurant",
+     "list_line": 91
+    },
+    {
+     "name": "get_flight_information",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/travel_booking_client.py::get_flight_information",
+     "list_line": 93
+    },
+    {
+     "name": "send_email",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::send_email",
+     "list_line": 95
+    }
+   ]
+  },
+  "workspace": {
+   "path": "src/agentdojo/default_suites/v1/workspace/task_suite.py",
+   "start": 48,
+   "end": 76,
+   "tools": [
+    {
+     "name": "send_email",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::send_email",
+     "list_line": 50
+    },
+    {
+     "name": "delete_email",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::delete_email",
+     "list_line": 51
+    },
+    {
+     "name": "get_unread_emails",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::get_unread_emails",
+     "list_line": 52
+    },
+    {
+     "name": "get_sent_emails",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::get_sent_emails",
+     "list_line": 53
+    },
+    {
+     "name": "get_received_emails",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::get_received_emails",
+     "list_line": 54
+    },
+    {
+     "name": "get_draft_emails",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::get_draft_emails",
+     "list_line": 55
+    },
+    {
+     "name": "search_emails",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::search_emails",
+     "list_line": 56
+    },
+    {
+     "name": "search_contacts_by_name",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::search_contacts_by_name",
+     "list_line": 57
+    },
+    {
+     "name": "search_contacts_by_email",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/email_client.py::search_contacts_by_email",
+     "list_line": 58
+    },
+    {
+     "name": "get_current_day",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::get_current_day",
+     "list_line": 60
+    },
+    {
+     "name": "search_calendar_events",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::search_calendar_events",
+     "list_line": 61
+    },
+    {
+     "name": "get_day_calendar_events",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::get_day_calendar_events",
+     "list_line": 62
+    },
+    {
+     "name": "create_calendar_event",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::create_calendar_event",
+     "list_line": 63
+    },
+    {
+     "name": "cancel_calendar_event",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::cancel_calendar_event",
+     "list_line": 64
+    },
+    {
+     "name": "reschedule_calendar_event",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::reschedule_calendar_event",
+     "list_line": 65
+    },
+    {
+     "name": "add_calendar_event_participants",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/calendar_client.py::add_calendar_event_participants",
+     "list_line": 66
+    },
+    {
+     "name": "append_to_file",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::append_to_file",
+     "list_line": 68
+    },
+    {
+     "name": "search_files_by_filename",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::search_files_by_filename",
+     "list_line": 69
+    },
+    {
+     "name": "create_file",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::create_file",
+     "list_line": 70
+    },
+    {
+     "name": "delete_file",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::delete_file",
+     "list_line": 71
+    },
+    {
+     "name": "get_file_by_id",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::get_file_by_id",
+     "list_line": 72
+    },
+    {
+     "name": "list_files",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::list_files",
+     "list_line": 73
+    },
+    {
+     "name": "share_file",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::share_file",
+     "list_line": 74
+    },
+    {
+     "name": "search_files",
+     "tool_id": "src/agentdojo/default_suites/v1/tools/cloud_drive_client.py::search_files",
+     "list_line": 75
+    }
+   ]
+  }
+ },
+ "runs_summary": {
+  "Meta-SecAlign-70B-repeat_user_prompt": {
+   "files": 2979,
+   "bytes": 44567087,
+   "suites": {
+    "banking": 457,
+    "slack": 341,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2979
+   }
+  },
+  "Meta-SecAlign-70B": {
+   "files": 2979,
+   "bytes": 38091837,
+   "suites": {
+    "banking": 457,
+    "slack": 341,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2979
+   }
+  },
+  "claude-3-5-sonnet-20240620": {
+   "files": 753,
+   "bytes": 8700183,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-5-sonnet-20241022": {
+   "files": 753,
+   "bytes": 7198135,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-7-sonnet-20250219": {
+   "files": 1081,
+   "bytes": 12714916,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 614
+   },
+   "attack_dirs": {
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "None": 1081
+   }
+  },
+  "claude-3-haiku-20240307": {
+   "files": 753,
+   "bytes": 15958511,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-opus-20240229": {
+   "files": 753,
+   "bytes": 11165919,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "claude-3-sonnet-20240229-repeat_user_prompt": {
+   "files": 40,
+   "bytes": 1263711,
+   "suites": {
+    "workspace": 40
+   },
+   "attack_dirs": {
+    "none": 40
+   },
+   "json_benchmark_versions": {
+    "None": 40
+   }
+  },
+  "claude-3-sonnet-20240229": {
+   "files": 753,
+   "bytes": 13733402,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "command-r-plus": {
+   "files": 753,
+   "bytes": 4820198,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "command-r": {
+   "files": 753,
+   "bytes": 5499429,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-flash-001": {
+   "files": 753,
+   "bytes": 6895149,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-flash-002": {
+   "files": 753,
+   "bytes": 4217905,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-pro-001": {
+   "files": 753,
+   "bytes": 6943050,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-1.5-pro-002": {
+   "files": 753,
+   "bytes": 6474120,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gemini-2.0-flash-001": {
+   "files": 1081,
+   "bytes": 6535189,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 614
+   },
+   "attack_dirs": {
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "None": 1081
+   }
+  },
+  "gemini-2.0-flash-exp": {
+   "files": 753,
+   "bytes": 4654209,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-3.5-turbo-0125": {
+   "files": 753,
+   "bytes": 7347987,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4-0125-preview": {
+   "files": 753,
+   "bytes": 7458124,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4-turbo-2024-04-09": {
+   "files": 753,
+   "bytes": 6531659,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-repeat_user_prompt": {
+   "files": 753,
+   "bytes": 10061514,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-spotlighting_with_delimiting": {
+   "files": 753,
+   "bytes": 7358432,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-tool_filter": {
+   "files": 753,
+   "bytes": 7109699,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13-transformers_pi_detector": {
+   "files": 753,
+   "bytes": 6532421,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "gpt-4o-2024-05-13": {
+   "files": 6899,
+   "bytes": 64630710,
+   "suites": {
+    "banking": 1545,
+    "slack": 1181,
+    "travel": 1527,
+    "workspace": 2646
+   },
+   "attack_dirs": {
+    "captcha_dos": 97,
+    "direct": 629,
+    "dos": 97,
+    "felony_dos": 97,
+    "ignore_previous": 629,
+    "important_instructions": 629,
+    "important_instructions_no_model_name": 629,
+    "important_instructions_no_names": 629,
+    "important_instructions_no_user_name": 629,
+    "important_instructions_wrong_model_name": 629,
+    "important_instructions_wrong_user_name": 629,
+    "injecagent": 629,
+    "none": 124,
+    "offensive_email_dos": 97,
+    "swearwords_dos": 97,
+    "tool_knowledge": 629
+   },
+   "json_benchmark_versions": {
+    "None": 6899
+   }
+  },
+  "gpt-4o-mini-2024-07-18": {
+   "files": 753,
+   "bytes": 8201204,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "meta-llama_Llama-3-70b-chat-hf": {
+   "files": 753,
+   "bytes": 5743105,
+   "suites": {
+    "banking": 169,
+    "slack": 131,
+    "travel": 167,
+    "workspace": 286
+   },
+   "attack_dirs": {
+    "important_instructions": 629,
+    "none": 124
+   },
+   "json_benchmark_versions": {
+    "None": 753
+   }
+  },
+  "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt": {
+   "files": 2828,
+   "bytes": 60101110,
+   "suites": {
+    "banking": 411,
+    "slack": 236,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 798,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2828
+   }
+  },
+  "meta-llama_Llama-3.3-70B-Instruct": {
+   "files": 2979,
+   "bytes": 35784498,
+   "suites": {
+    "banking": 457,
+    "slack": 341,
+    "travel": 447,
+    "workspace": 1734
+   },
+   "attack_dirs": {
+    "direct": 949,
+    "ignore_previous": 949,
+    "important_instructions": 949,
+    "none": 132
+   },
+   "json_benchmark_versions": {
+    "v1.2.1": 2979
+   }
+  }
+ },
+ "tar_symlinks": [],
+ "blob_mismatch": [],
+ "tree_blobs_missing_from_tarball": []
+}

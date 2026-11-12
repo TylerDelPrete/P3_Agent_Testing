@@ -1,0 +1,16 @@
+{
+  "models_dir": "~/research-ollama/models",
+  "logs_dir": "~/research-ollama/logs",
+  "manifest": "models.txt",
+  "ollama_binary": "ollama",
+  "gpu_gres": "gpu:1",
+  "gpu_partition": "",
+  "cpu_partition": "",
+  "gpu_memory": "32G",
+  "cpu_memory": "8G",
+  "cpus": 4,
+  "time": "06:00:00",
+  "port": 11434,
+  "keep_alive": "5m",
+  "context_length": 8192
+}

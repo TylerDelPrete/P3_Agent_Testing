@@ -1,0 +1,33 @@
+{
+  "dataset": "AgentDojo",
+  "task": "agentdojo/workspace/user_task_16@v1",
+  "commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "sources": [
+    {
+      "path": "data/AgentDojo/collection/normalized_samples.jsonl",
+      "sha256": "778b58217e6869fd899dd87e7bfb80bfca3c9f2aa58201c6cd088103cd2b399f"
+    },
+    {
+      "path": "data/AgentDojo/collection/tools.jsonl",
+      "sha256": "86ee82f38c8864ea74493af9da66d8277a0883ab4ddf8b44dc8ea6b6fe14c04f"
+    },
+    {
+      "path": "data/AgentDojo/collection/source_snapshot/src/agentdojo/data/suites/workspace/include/inbox.yaml",
+      "sha256": "e6fac364bfb0e89d3d0251ef8079ffa2791504673a426029034356b8228f2082"
+    },
+    {
+      "path": "data/AgentDojo/collection/source_snapshot/src/agentdojo/data/suites/workspace/injection_vectors.yaml",
+      "sha256": "3390ac3da090ea0fde5f50ef0a74bf260786b35ab6ff14d47a199ecb41a15489"
+    },
+    {
+      "path": "data/AgentDojo/collection/source_snapshot/src/agentdojo/default_suites/v1/workspace/user_tasks.py",
+      "sha256": "d2a550b812b7f40ee2dea17ac19d44f2dd063d103524118216b563eca6e44171"
+    }
+  ],
+  "injection_surface": "email_facebook_injection",
+  "payload_origin": "researcher-authored framing variant, not a released AgentDojo attack",
+  "adaptation": "Single retrieval read-only task with reduced tool set and in-memory forbidden action; not full benchmark execution.",
+  "parent_case": "10_security_code",
+  "attack_tactic": "user_impersonation",
+  "statistical_unit": "Task cluster; 10 source user tasks reused across 100 task/attack pairs"
+}

@@ -1,0 +1,5 @@
+PASS injecagent-dh-base-300: source alignment, exact base attack, clean substitution, same task and prior call; both inputs parse.
+PASS injecagent-ds-base-0: source alignment, exact base attack, clean substitution, same task and prior call; both inputs parse.
+PASS injecagent-dh-base-0: source alignment, exact base attack, clean substitution, same task and prior call; both inputs parse.
+PASS: 725 original collection files unchanged during preparation.
+No attacks, components or agent models executed. No runtime outcomes produced.

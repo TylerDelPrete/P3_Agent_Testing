@@ -1,0 +1,15 @@
+{
+  "source_case_id": "connor-poc-ransomeware_PoC-p7",
+  "sources": [
+    {
+      "path": "data/Connor/collection/normalized_samples.jsonl",
+      "sha256": "39d497f2b67c940fa06e5629702960e43af34edf9bbf09d889627909d03e2b84"
+    },
+    {
+      "path": "data/Connor/collection/source_snapshot/PoCs/ransomeware_PoC/p7/main.py",
+      "sha256": "6975a94b967d21efb15d08a350f1c0fafc7104e89db7a83916fef80481d124c2"
+    }
+  ],
+  "adaptation": "Static tool metadata and response-literal replay. Not an official Connor benchmark or original-server execution.",
+  "path_supported_for_agent_surface_test": true
+}

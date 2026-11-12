@@ -1,0 +1,22 @@
+[
+  {
+    "name": "add",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      9,
+      18
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "add_clean",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      22,
+      24
+    ],
+    "response_literal_excerpts": []
+  }
+]

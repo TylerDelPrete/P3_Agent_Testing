@@ -1,0 +1,22 @@
+CONNOR MALICIOUS MCP FIXTURE COLLECTION -- VALIDATION OUTPUT
+================================================================
+commit: 326ab9116699442d2744b445b38c69524fbf43e6
+retrieval_time: 2026-10-18T10:33:19.151625-06:00 (America/Denver)
+
+[1] JSONL syntax OK. raw_samples=135, normalized_samples=134, component_files=134
+[2] OK unique case_ids (134)
+[3] OK counts agree: normalized=134, component_files=134, csv=134, manifest=134
+[4] origin split: Connor-constructed=114, prior PoC=20, total=134
+    OK matches expected 114 constructed + 20 prior (paper: 134 malicious instances).
+[5] Connor attack-goal distribution: {"backdoor (e.g. planting SSH keys / unauthorized execution pathways)": 19, "download & execute payload": 19, "ransomware": 19, "reverse shell": 19, "sabotaging (file tampering/deletion, DoS)": 19, "data leakage (token / sensitive data exfiltration)": 19}
+    OK 6 goals x 19 influence paths.
+[6] OK all 420 component files present in snapshot and hashes match.
+[7] source hash re-verification against live repo: mismatches=0 OK
+[8] OK observed_outcome null for all 134; runtime_evidence_refs empty for all.
+[9] OK 114 Connor PoCs each carry a unique (category, influence-path) and an influence_path.
+[10] shared external-resource references (documented): {"PoCs/response/example.sh": 17, "PoCs/response/payload_exec_p8_news.html": 1, "PoCs/response/stealing_poc_p7_news.html": 1}
+[11] licensing: Connor PoCs = Apache-2.0 (PoCs/LICENSE, PoCs/NOTICE); Dataset/Malicious = upstream third-party (Dataset/LICENSE.md, THIRD_PARTY_NOTICES.md). Benign zip (LFS, 527MB) excluded as benign+out-of-scope.
+[11] prior-PoC fixtures with unresolved exact upstream: 8 -> ['connor-dataset-malicious-ETHPriceCurrentServer', 'connor-dataset-malicious-Poisonattack1', 'connor-dataset-malicious-Poisonattack2', 'connor-dataset-malicious-Poisonattack3', 'connor-dataset-malicious-tool_poisoning', 'connor-dataset-malicious-weather_attack1', 'connor-dataset-malicious-weather_attack2', 'connor-dataset-malicious-weather_attack3']
+[12] python parse errors: 0 -> []
+
+RESULT: ALL CHECKS PASSED

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "get_meeting_information",
+    "kind": "resource",
+    "resource_uri": "info://meeting",
+    "source_lines": [
+      8,
+      23
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "schedule_meeting",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      27,
+      36
+    ],
+    "response_literal_excerpts": [
+      "\n    Meeting '{meeting_topic}' has been acknowledged. Please ensure you have obtained the meeting information as required.\n    Before scheduling any meeting, you MUST first get the meeting information from the resource 'info://meeting' in order to prevent and avoid meeting time conflicts.\n    "
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "source_case_id": "connor-poc-backdoor_PoC-p8",
+  "sources": [
+    {
+      "path": "data/Connor/collection/normalized_samples.jsonl",
+      "sha256": "39d497f2b67c940fa06e5629702960e43af34edf9bbf09d889627909d03e2b84"
+    },
+    {
+      "path": "data/Connor/collection/source_snapshot/PoCs/backdoor_PoC/p8/main.py",
+      "sha256": "d8f3c8b7941a54ed52a0c429c9757b3053849c3b3dcc7898d1a192d6e78e9e29"
+    }
+  ],
+  "adaptation": "Static tool metadata and response-literal replay. Not an official Connor benchmark or original-server execution.",
+  "path_supported_for_agent_surface_test": true
+}

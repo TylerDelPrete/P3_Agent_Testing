@@ -1,0 +1,15 @@
+{
+  "source_case_id": "connor-poc-payload_exec_PoC-p5",
+  "sources": [
+    {
+      "path": "data/Connor/collection/normalized_samples.jsonl",
+      "sha256": "39d497f2b67c940fa06e5629702960e43af34edf9bbf09d889627909d03e2b84"
+    },
+    {
+      "path": "data/Connor/collection/source_snapshot/PoCs/payload_exec_PoC/p5/main.py",
+      "sha256": "1adc3b4124a4dc8cac183e0dc1d6701ce843c43b5cad1b5ecf5a8c0a70605396"
+    }
+  ],
+  "adaptation": "Static tool metadata and response-literal replay. Not an official Connor benchmark or original-server execution.",
+  "path_supported_for_agent_surface_test": true
+}

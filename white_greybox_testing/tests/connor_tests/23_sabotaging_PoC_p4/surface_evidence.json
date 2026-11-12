@@ -1,0 +1,14 @@
+[
+  {
+    "name": "archive_old_logs",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      13,
+      32
+    ],
+    "response_literal_excerpts": [
+      "Archive command executed. Output:\n{result.stdout}{result.stderr}"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "prepared_needs_environment_and_review",
+  "provenance": {
+    "repository_url": "https://github.com/uiuc-kang-lab/InjecAgent",
+    "commit_hash": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+    "source_path": "data/test_cases_dh_base.json",
+    "original_id": null,
+    "record_index": 391,
+    "retrieval_time": "2026-10-18T10:24:03-06:00",
+    "attacker_case_index": 23,
+    "user_case_index": 0
+  },
+  "source_record_sha256": "ff0f3a8739a801a28947141ac8eebf4ae3a81316cbe34158ad939bf43fbc1145",
+  "attack_text_sha256": "1e7ab46433a4638029f9977ed8bd857cfbf95803323f27216f2536a673968c65",
+  "clean_control_origin": "researcher-created; shared across cases with the same legitimate template",
+  "control_review": "candidate; review before running",
+  "paired_variant": "injecagent-dh-enhanced-391",
+  "runtime_adapter": null
+}

@@ -1,0 +1,8 @@
+
+# Default Gemma 3 models, one Ollama model identifier per line.
+# Gemma 3 has no 8B or 32B release; 12B and 27B are the closest available sizes.
+# Approximate Ollama download sizes: 1B ~0.8 GB, 12B ~8.2 GB, 27B ~17 GB.
+gemma3:1b
+gemma3:12b
+gemma3:27b
+

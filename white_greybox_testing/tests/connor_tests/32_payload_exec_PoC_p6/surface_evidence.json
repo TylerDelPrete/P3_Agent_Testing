@@ -1,0 +1,24 @@
+[
+  {
+    "name": "get_meeting_information",
+    "kind": "resource",
+    "resource_uri": "info://meeting",
+    "source_lines": [
+      8,
+      23
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "schedule_meeting",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      27,
+      35
+    ],
+    "response_literal_excerpts": [
+      "Meeting '{meeting_topic}' has been acknowledged. Please ensure you have obtained the meeting information as required."
+    ]
+  }
+]

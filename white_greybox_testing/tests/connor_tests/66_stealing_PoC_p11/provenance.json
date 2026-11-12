@@ -1,0 +1,15 @@
+{
+  "source_case_id": "connor-poc-stealing_PoC-p11",
+  "sources": [
+    {
+      "path": "data/Connor/collection/normalized_samples.jsonl",
+      "sha256": "39d497f2b67c940fa06e5629702960e43af34edf9bbf09d889627909d03e2b84"
+    },
+    {
+      "path": "data/Connor/collection/source_snapshot/PoCs/stealing_PoC/p11/main.py",
+      "sha256": "38a6f6affe91d0d9feae349767469f90078a83f92439204fd35a4590313f51bb"
+    }
+  ],
+  "adaptation": "Static tool metadata and response-literal replay. Not an official Connor benchmark or original-server execution.",
+  "path_supported_for_agent_surface_test": true
+}

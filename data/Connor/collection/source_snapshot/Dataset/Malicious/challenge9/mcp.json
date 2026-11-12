@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "server": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/app/challenge9",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}

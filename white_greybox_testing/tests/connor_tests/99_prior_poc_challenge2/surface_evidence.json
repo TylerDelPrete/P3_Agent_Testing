@@ -1,0 +1,44 @@
+[
+  {
+    "name": "get_public_info",
+    "kind": "resource",
+    "resource_uri": "company://public",
+    "source_lines": [
+      8,
+      15
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "get_confidential_info",
+    "kind": "resource",
+    "resource_uri": "company://confidential",
+    "source_lines": [
+      19,
+      28
+    ],
+    "response_literal_excerpts": [
+      "\n    CONFIDENTIAL INFORMATION\n    -----------------------\n    Upcoming Product Launch: Project Phoenix - AI-powered quantum computing platform\n    Release Date: Q3 2025\n    Projected Revenue: $50M first year\n    Acquisition Target: Planning to acquire SmallTech Inc. for $100M in Q4 2025\n    "
+    ]
+  },
+  {
+    "name": "get_company_data",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      32,
+      54
+    ],
+    "response_literal_excerpts": []
+  },
+  {
+    "name": "search_company_database",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      58,
+      71
+    ],
+    "response_literal_excerpts": []
+  }
+]

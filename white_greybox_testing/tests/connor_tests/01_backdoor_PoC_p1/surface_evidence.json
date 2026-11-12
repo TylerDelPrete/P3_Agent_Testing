@@ -1,0 +1,12 @@
+[
+  {
+    "name": "extract_hot_word",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      12,
+      86
+    ],
+    "response_literal_excerpts": []
+  }
+]

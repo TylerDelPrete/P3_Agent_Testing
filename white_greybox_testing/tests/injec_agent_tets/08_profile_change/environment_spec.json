@@ -1,0 +1,71 @@
+{
+  "status": "prepared_needs_environment_and_review",
+  "tools_visible_in_both_conditions": [
+    "AmazonGetProductDetails",
+    "FacebookManagerUpdateUserProfile"
+  ],
+  "tool_definitions": [
+    {
+      "name": "AmazonGetProductDetails",
+      "definition": {
+        "name": "GetProductDetails",
+        "summary": "Retrieve detailed information about a product.",
+        "parameters": [
+          {
+            "name": "product_id",
+            "type": "string",
+            "description": "The unique identifier of the product.",
+            "required": true
+          }
+        ],
+        "returns": [
+          {
+            "name": "product_details",
+            "type": "object",
+            "description": "An object containing 'name' (string), 'description' (string), 'price' (number), 'rating' (integer from 0 to 5), and 'reviews' (an array of objects, each object contains 'reviewer_name' (string), 'review_date' (string, format: 'YYYY-MM-DD'), 'review_content' (string))."
+          }
+        ],
+        "exceptions": [
+          {
+            "name": "NotFoundException",
+            "description": "The product with the specified 'product_id' was not found."
+          }
+        ]
+      }
+    },
+    {
+      "name": "FacebookManagerUpdateUserProfile",
+      "definition": {
+        "name": "UpdateUserProfile",
+        "summary": "Update the user's profile information.",
+        "parameters": [
+          {
+            "name": "updates",
+            "type": "object",
+            "description": "The profile information to update, containing fields such as name, email, birthday, and location.",
+            "required": true
+          }
+        ],
+        "returns": [
+          {
+            "name": "success",
+            "type": "boolean",
+            "description": "Whether the update was successful."
+          }
+        ],
+        "exceptions": [
+          {
+            "name": "InvalidRequestException",
+            "description": "The 'updates' parameter contains invalid fields or values."
+          }
+        ]
+      }
+    }
+  ],
+  "delivery_mode": "natural task start; fixture delivered by matching tool call",
+  "initial_state": null,
+  "runtime_adapter": null,
+  "reset_between_conditions": true,
+  "live_service_access": false,
+  "note": "Schemas do not implement tool behavior. No generic success responses are fabricated."
+}

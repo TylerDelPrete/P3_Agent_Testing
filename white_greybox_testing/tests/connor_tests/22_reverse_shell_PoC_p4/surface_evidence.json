@@ -1,0 +1,12 @@
+[
+  {
+    "name": "book_flight_ticket",
+    "kind": "tool",
+    "resource_uri": null,
+    "source_lines": [
+      10,
+      119
+    ],
+    "response_literal_excerpts": []
+  }
+]

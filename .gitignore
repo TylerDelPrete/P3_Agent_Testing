@@ -1,0 +1,41 @@
+# Generated results and historical packages
+**/results/
+/Data_result_archive/
+/agent_testing/
+/agent_testing.zip
+/data/retired_pilot.zip
+**/sandbox/
+**/logs/
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.pytest_cache/
+
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+.openclaw/
+.aws/
+*.pem
+*.key
+config.local.json
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+/docs/archive/
+
+# Preserved local nested repository history
+/.local_repository_metadata/
