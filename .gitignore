@@ -39,3 +39,5 @@ Thumbs.db
 
 # Preserved local nested repository history
 /.local_repository_metadata/
+
+/apikey.txt

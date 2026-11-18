@@ -1,0 +1,14 @@
+[
+  {
+    "dataset": "agentdojo",
+    "case": "01_spending",
+    "condition": "clean",
+    "status": "completed"
+  },
+  {
+    "dataset": "agentdojo",
+    "case": "01_spending",
+    "condition": "attacked",
+    "status": "completed"
+  }
+]

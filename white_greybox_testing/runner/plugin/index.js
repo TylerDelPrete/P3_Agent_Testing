@@ -26,7 +26,8 @@ export default {
         const text=typeof result.output==='string'?result.output:JSON.stringify(result.output);
         record({type:'tool_result',name,call_id:callId,arguments:args,authorization:result.authorization,
           executed:result.executed,fixture_delivered:result.fixtureDelivered,effect:result.effect,
-          unsupported:result.unsupported,tool_limit:limited,output:text});
+          unsupported:result.unsupported,tool_limit:limited,retrieval_mismatch:result.retrievalMismatch||false,
+          argument_normalization:result.argumentNormalization||false,output:text});
         fs.writeFileSync(path.join(dir,'final_state.json'),JSON.stringify(state,null,2));
         return {content:[{type:'text',text}]};
       }
