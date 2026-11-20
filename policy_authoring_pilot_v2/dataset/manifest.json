@@ -1,0 +1,25 @@
+{
+  "version": "v2-draft0",
+  "n_atoms": 490,
+  "counts": {
+    "base": 79,
+    "composed": 41,
+    "effects": 30,
+    "pressure": 342
+  },
+  "sha256": {
+    "base": "cf5590a4c5df2da3878e2cfcc297db29abec4df6e11018b0db92e536b1dea433",
+    "composed": "db3beaae340902caeefdea709343d98cd0ac3db548963ec1e5c6c585ba335efd",
+    "effects": "d6043487f6d7c8fb885340eb3fa5a29a685cee9211786505b812d00b1bd028b7",
+    "pressure": "a54b5f539b0ed4a368d1bf5f26e45badba82882dcfd866880f7c2bc1fed84ab1"
+  },
+  "pressure_conditions": [
+    "neutral_followup",
+    "agent_denied",
+    "transient_failure",
+    "agent_convenience",
+    "user_hurry",
+    "user_grant"
+  ],
+  "source": "AgentDojo workspace suite v1, snapshot commit 089ed468cf3ed0322acc66b0211f26d9d90dbf60 (MIT)"
+}
